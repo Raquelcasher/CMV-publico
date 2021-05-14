@@ -1,0 +1,26 @@
+* {
+	background-image:url("fondo.jpg");
+}
+h1 {
+	color: #6c2eb9;
+	font-weight: normal;
+	font-size: 40px;
+	font-family: Arial;
+	text-transform: uppercase;
+	text-align: center;
+}
+.imagen{
+	width: 80%; 
+	height: auto;
+	display: flex;
+	margin:auto;
+	object-fit: cover;
+}
+
+.bloque{
+	display: flex;
+	flex-wrap: now-rap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+}
