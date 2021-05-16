@@ -8,30 +8,52 @@ o sea al final de este archivo o en la misma pagina html
 
 */
 * {
-	color:white;
-	background-image:url("fondo.jpg");
 	box-sizing:border-box;
-	padding:0px;
   	margin:0px;
 }
-h1 {
-	color: #6c2eb9;
-	font-weight: normal;
-	font-size: 40px;
-	font-family: Arial;
-	text-transform: uppercase;
-	text-align: center;
-}
-img{
-	display: flex;
-	margin:auto;
-	object-fit: cover;
+body {
+	background-image:url("fondo.jpg");
 }
 
-.bloque{
-	display: flex;
-	flex-wrap: now-rap;
-	justify-content: center;
-	align-items: center;
-	align-content: flex-start;
+h1 {
+	color: #ffffff; 
+	font-family: 'Raleway',sans-serif; 
+	font-size: 62px; 
+	font-weight: 800; 
+	line-height: 72px; 
+	margin: 0 0 24px; 
+	text-align: center; 
+	text-transform: uppercase; 
+}
+
+footer {
+	color:white;
+}
+
+div {
+    text-align: center;
+
+}
+
+/*Se recorta lo que se ve de la imagen objet-fit*/
+.imagen {
+	width: 100%; 
+	object-fit: contain;
+}
+
+figure {
+  width:33%;
+  height:auto;
+  display: inline-block;
+
+
+}
+
+@media screen and (max-width: 900px) {
+	figure {
+		height:150px;
+		display: block;
+		margin: auto;
+		margin-bottom: 65px;
+	}		
 }
