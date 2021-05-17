@@ -15,9 +15,18 @@ fecha: 14/05/2021
 	
 	<!-- Etiqueta del navegador -->
 	<title>Gran Canaria</title>
-	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
 	<!-- Estilos que solo aplican a esta pagina -->
-    <link href="design.css" rel="stylesheet"/>
+   	<style>
+   		h1{
+   			text-align: center;
+   			font-family: 'Vollkorn', serif;
+   		}
+   		h1::first-letter{
+	   		font-size: 400%;
+	   	}
+   	</style>
 	<!-- scripts personalizados Javascript o JQuery -->
 	<script>
 		function inialert(){
@@ -32,32 +41,19 @@ fecha: 14/05/2021
 </A> <A name="arriba"></A>
 	<!-- cabecera de pagina -->
 	<header>
-		<h1>Gran Canaria</h1>
+		<h1>Menú</h1>
 		<br/>
 	</header>
 	
 	<!-- bloque de imagenes -->
-	<div class="bloque">
-			<figure>
-				<IMG class="imagen" SRC="sunset.jpg"><IMG>
-				<figcaption>
-					Palmeras Maspalomas
-				</figcaption>
-			</figure>
-			<figure>
-				<IMG class="imagen" SRC="mount.jpg" ><IMG>
-				<figcaption>
-					Norte de la Isla
-				</figcaption>
-			</figure>
-			<figure>
-				<IMG class="imagen" SRC="forest.jpg" ><IMG>
-				<figcaption>
-					Camino al Roque Nublo
-				</figcaption>
-					
-			</figure>
-	</div>
+	<main>
+		<details>
+				<ul>
+					<li><a href="dia17.html">Clase día 17</a></li>
+					<li><a href="proyecto.html">Proyecto</a></li>
+				</ul>
+		</details>
+	</main>
 
 	<!-- pie de pagina -->
 	<footer>
