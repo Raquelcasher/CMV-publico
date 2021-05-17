@@ -14,25 +14,34 @@ fecha: 14/05/2021
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	
 	<!-- Etiqueta del navegador -->
-	<title>Gran Canaria</title>
+	<title>Lunes 17 de Mayo de 2021</title>
 	
 	<!-- Estilos que solo aplican a esta pagina -->
-    <link href="design.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@1,200&family=Roboto:wght@100&display=swap" rel="stylesheet">
 	<!-- scripts personalizados Javascript o JQuery -->
 	<style>
-		*{
+		*{	
 			margin: 20px;
 			padding: 10px;
 			box-sizing: border-box;
 		}
-
-		p{
-			display:inline-block;
-			width: 33%;
-		}
 		a:hover{
   			font-size:25px;
   			background-color:yellow;
+		}
+		body{
+			background-image: url("fondo.jpg");
+		}
+		.cuadricula{
+  			box-shadow: 30px 30px 30px rgba(255,0,0,0.5); 
+			border-radius: 20px;  
+			background-color:#ddd;
+			width:200px;
+			padding:10px;
+		}
+		.fuente{
+			font-family: 'KoHo', sans-serif;
 		}
 	</style>
 </head>
@@ -42,14 +51,18 @@ fecha: 14/05/2021
 </A> <A name="arriba"></A>
 	<!-- cabecera de pagina -->
 	<header>
-		<h1 style >Gran Canaria</h1>
+		<h1 style>Lunes 17 de Mayo de 2021</h1>
 		<br/>
 	</header>
 	
-	<!-- bloque de imagenes -->
+	<!-- Menu y fuente externa -->
 	<div>
-			<p>
+			<p class="cuadricula">
 				<a href="https:/www.google.com">Psudoclases</a> 
+			</p>
+			</br>
+			<p class="fuente">
+				Parrafo con fuente externa
 			</p>
 	</div>
 
