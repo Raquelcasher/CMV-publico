@@ -1,6 +1,6 @@
 let i = 0;
-let button= document.querySelector('#button').addEventListener('click',function(){
-	if(){
+let button= document.querySelector('#button').addEventListener('click', function(){
+	if(!i){
 		document.getElementById('readMore').style.display = 'inline';
 		i=1;
 	}
