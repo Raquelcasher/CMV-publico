@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: Estilos CSS - jQuery
+entorno: curso Accenture-CMV
+autor: Carlos Boni
+fecha: Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>CMV - Dia 06 - Estilos CSS - jQuery</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		
+		:root {
+			--fuenteDia : #ff0000;
+			--fuenteNoche: #0000ff;
+		}
+		
+		* {
+			font-family: 'Nunito', sans-serif;
+		}
+		
+		body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+		}
+		
+		.dia {
+		  color: var(--fuenteDia);
+		}
+		
+		.noche {
+		  color: var(--fuenteNoche);
+		}
+
+
+		
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body class="dia">
+
+	<!-- cabecera de pagina -->
+	<header>
+	<h1>CMV - Dia 06 - Estilos CSS - jQuery</h1>
+	<h2>DOM CSS: acceso y manipulación con Javascript</h2>
+
+
+	</header>
+	
+	<main>
+	<!-- bloque de contenido de la pagina -->
+		<p id="texto" >Pinche en el siguiente botón para cambiar de color</p>
+
+		<button>Alternar colores</button>
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2021 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+	// seccion de codigo javascript 
+	
+		$("button").click(function(){
+			$("h1, h2, p").toggleClass("noche");
+		  });
+	</script>
+</body>
+</html>

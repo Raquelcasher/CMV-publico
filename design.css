@@ -51,8 +51,6 @@ figure {
   width:33%;
   height:auto;
   display: inline-block;
-
-
 }
 /*Responsive de las imagenes*/
 @media screen and (max-width: 900px) {
@@ -63,13 +61,15 @@ figure {
 		margin-bottom: 65px;
 	}		
 }
+.formulario{
+	align-items: center;
+}
 fieldset{
-
 	box-shadow: 80px 30px 30px rgba(255,0,0,0.5); 
 	border-radius: 20px;  
 	background-color:#ddd;
 	width: 400px;
-  float: left;
+  	float: left;
 	padding:10px;
 }
 .fuente{

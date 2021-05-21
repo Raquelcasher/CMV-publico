@@ -22,35 +22,6 @@ fecha: 14/05/2021
 			box-sizing:border-box;
 		  	margin:0px;
 		}
-		.marco {
-		  display: grid;
-		  border-style: solid;
-		  border-color: red;
-		  grid-template-columns: 250px repeat(3,1fr);
-		  grid-template-rows: 150px 40px auto 40px;
-		  grid-gap: 10px;
-		  width: 100vw;
-		  height: 100vh;
-		}
-		
-		.encabezado {
-		  border-style: solid;
-		  border-color: blue;
-		  grid-column: 1 / span 4;
-		  grid-row: 1 / span 1;
-		}
-		.migas {
-		  border-style: solid;
-		  border-color: yellow;
-		  grid-column: 1 / span 4;
-		  grid-row: 2 / span 1;
-		}
-		.pie {
-		  border-style: solid;
-		  border-color: aqua;
-		  grid-column: 1 / span 4;
-		  grid-row: 4 / span 2;
-		}
 
 		body {
 			background-image:url("fondo.jpg");
@@ -128,26 +99,23 @@ fecha: 14/05/2021
 	<script>
 	</script>
 </head>
-<div class="marco">
+
 
 <body>
 </A> <A name="arriba"></A>
-<div class="encabezado">
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>Gran Canaria</h1>
 		<br/>
 	</header>
-</div>
+	
 	<!-- Menú -->
-<div class="migas">
-	<div class="scrollmenu" >
+	<div class="scrollmenu">
 		<ul class="uk">
 			<li class="ki"><a href="https:/www.google.com">Google</a> </li>
 			<li class="ki"><a href="https://www.gobiernodecanarias.org/principal/">Gobierno de canarias</a></li>
 		</ul>
 	</div>
-</div>
 </br>
 	<!-- bloque de imagenes -->
 	<div class="bloque">
@@ -180,14 +148,12 @@ fecha: 14/05/2021
 		</p>
 	</div>
 	<!-- pie de pagina -->
-	<div class="pie">
-		<footer>
-			<!--Destino de ancla inicio-->
-			<p>Volver <A href="#arriba">arriba</p>
-			<br/><br/>
-			<div>&copy; 2021 Alum.Raquel Castellano Hernández</a></div>
-		</footer>
-	</div>
-</div>
+	<footer>
+		<br/><br/>
+		<!--Destino de ancla inicio-->
+		<p>Volver <A href="#arriba">arriba</p>
+		<br/><br/>
+		<div>&copy; 2021 Alum.Raquel Castellano Hernández</a></div>
+	</footer>
 </body>
 </html>
