@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: Gran Canaria
+entorno: Curso CMV-Accenture
+autor: Raquel Castellano Hernández
+fecha: 14/05/2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- Etiqueta del navegador -->
+	<title>Gran Canaria</title>
+	
+	<!-- Estilos que solo aplican a esta pagina -->
+    <style type="text/css">
+    	/*
+		CSS 
+		web o pagina: https://raquelcasher.github.io/CMV-publico/ejer1.html
+		autor: Raquel Castellano Hernández
+		fecha: 14-5-2021
+		RECORDAR: En caso de conflictos se aplica el estilo que se define último,
+		o sea al final de este archivo o en la misma pagina html
+
+		*/
+		* {
+			box-sizing:border-box;
+		  	margin:0px;
+		}/*
+		body {
+			background-image:url("fondo.jpg");
+		}*/
+		body {
+		  	background-image:url("fondo.jpg");
+		  	color:white;
+		  	font-family: "Lato", Helvetica, sans-serif;
+		}
+		h1 {
+			font-size: 62px; 
+			text-align: center; 
+			text-transform: uppercase; 
+		}
+		footer {
+			color:white;
+		}
+
+		div {
+		    text-align: center;
+
+		}
+		.contenedor{
+			position: relative;
+			top: 0px;
+			left: 0px;
+
+		}
+		/*Se recorta lo que se ve de la imagen objet-fit*/
+		.img {
+			width: 50%; 
+			object-fit: cover;
+		}
+		img:hover {
+		    border: 2px solid black;
+		    filter: grayscale(80%);
+		}
+		.pieFoto{
+			position: absolute;
+			bottom: 0px;
+			color:white;
+			left: 0px;
+		}
+		figure {
+		  width:33%;
+		  height:auto;
+		  display: inline-block;
+		}
+		/*Responsive de las imagenes*/
+		@media screen and (max-width: 900px) {
+			figure {
+				height:auto;
+				display: block;
+				margin: auto;
+				margin-bottom: 20px;
+			}		
+		}
+		.formulario{
+			margin: auto;
+			text-align: left;
+			width: 300px;
+			height: 225px;
+		}
+		fieldset{
+			width: 300px;
+			height: 300 px;
+			box-shadow: 80px 30px 30px rgba(255,0,0,0.5); 
+			border-radius: 20px;  
+			background-color:#ddd;
+		  	float: left;
+			padding:10px;
+		}
+		.fuente{
+			font-family: 'KoHo', sans-serif;
+		}
+		.fuente::first-letter{
+			font-size: 400%;
+		}
+		.scrollmenu {
+			justify-content: center;
+			color: white;
+			padding: 3px;
+			text-decoration: none;
+		}
+		.ki {
+			background-color:#FAFAFA;
+			color:#fff;
+			padding:10px 10px;
+			display: inline-block;
+			text-transform: uppercase;
+		}	
+
+		.ki:hover{
+			font-size:25px;
+			background-color:yellow;
+		}
+		.tam{
+			display: block;
+			margin: auto;
+			height: 500px;
+			width: 800px;
+		}
+		.carousel-caption {
+		  opacity: 0;
+		  -webkit-transition: all 0.4s;
+		  transition: all 0.4s;
+		  color: #fff;
+		}
+
+		.carousel-item:hover .carousel-caption {
+		  opacity: 1;
+		}
+    </style>
+	<!-- scripts personalizados Javascript o JQuery -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+</A> <A name="arriba"></A>
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>Gran Canaria</h1>
+		<br/>
+	</header>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="logo.jpg" alt="logo" style="width:40px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.google.com">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://new.edmodo.com/home">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+  </ul>
+</nav>
+
+	<!--Bootstrap-->
+	<div class="tam">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  	<ol class="carousel-indicators">
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    	<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  	</ol>
+	 	<div class="carousel-inner">
+		    <div class="carousel-item active">
+		      	<img class="d-block w-100" src="sunset.jpg" alt="First slide">
+		      	<div class="carousel-caption">
+			    	<h5>Sol</h5>
+			    	<p>Palmeras Maspalomas</p>
+			  	</div>
+		    </div>
+		    <div class="carousel-item">
+		      	<img class="d-block w-100" src="forest.jpg" alt="Second slide">
+		      	<div class="carousel-caption">
+			    	<h5>Campo</h5>
+			    	<p>Camino al Roque Nublo</p>
+			  	</div>
+		    </div>
+		    <div class="carousel-item">
+		      	<img class="d-block w-100" src="mount.jpg" alt="Third slide">
+		      	<div class="carousel-caption">
+			    	<h5>Montaña</h5>
+			    	<p>Norte de la Isla</p>
+			  	</div>
+		    </div>
+	 	</div>
+		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/>
+		<!--Destino de ancla inicio-->
+		<P>Volver <A href="#arriba">arriba</A>.
+		<br/><br/>
+		<div>&copy; 2021 Alum.Raquel Castellano Hernández</a></div>
+	</footer>
+</body>
+</html>

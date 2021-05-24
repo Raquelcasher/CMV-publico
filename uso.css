@@ -1,0 +1,142 @@
+.aplicar {
+  text-align: center;
+}
+.formas {
+  border-style: solid;
+  border-color: violet;
+}
+.solido {
+  border-style: solid;
+}
+:root {
+  --fuenteDia: #ff0000;
+  --fuenteNoche: #0000ff;
+}
+.dia {
+  color: var(--fuenteDia);
+}
+.noche {
+  color: var(--fuenteNoche);
+  background-color: black;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-size: 50px;
+}
+.fuente {
+  font-family: 'KoHo', sans-serif;
+  font-size: 20px;
+}
+.fuente::first-letter {
+  font-size: 400%;
+}
+.marco {
+  display: grid;
+  border-style: solid;
+  border-color: red;
+  grid-template-columns: 250px repeat(3, 1fr);
+  grid-template-rows: 150px 40px auto 40px;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100vh;
+}
+.encabezado {
+  border-style: solid;
+  border-color: blue;
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 1;
+}
+.migas {
+  border-style: solid;
+  border-color: yellow;
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 1;
+}
+.lado {
+  border-style: solid;
+  border-color: violet;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+.contenido {
+  border-style: solid;
+  border-color: violet;
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+  overflow: scroll;
+}
+.pie {
+  border-style: solid;
+  border-color: aqua;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 2;
+}
+.ki {
+  background-color: #FAFAFA;
+  color: #fff;
+  padding: 10px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.scrollmenu {
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+}
+li:hover {
+  font-size: 25px;
+  background-color: yellow;
+}
+.imagen {
+  width: 100%;
+  object-fit: cover;
+}
+img:hover {
+  border: 2px solid black;
+  filter: grayscale(80%);
+}
+.pieFoto {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  left: 0px;
+}
+figure {
+  width: 30%;
+  height: auto;
+  display: inline-block;
+}
+/*Responsive de las imagenes*/
+@media screen and (max-width: 1125px) {
+  figure {
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .lado {
+    display: none;
+  }
+  .contenido {
+    border-style: solid;
+    border-color: violet;
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+    overflow: scroll;
+  }
+}
