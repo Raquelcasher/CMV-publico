@@ -7,16 +7,35 @@ RECORDAR: En caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
 */
+:root {
+	--fuenteDia : white;
+	--fuenteNoche: black;
+}
+.dia {
+	color: var(--fuenteDia);
+}
+.noche {
+	color: var(--fuenteNoche);
+}
+
 * {
 	box-sizing:border-box;
   	margin:0px;
-}
+}/*
 body {
 	background-image:url("fondo.jpg");
+}*/
+body {
+  	background-image:url("fondo.jpg");
+  	color:white;
+  	font-family: "Lato", Helvetica, sans-serif;
+}
+body.dark{
+	color:black;
+	backdrop-filter: contrast(70%);
 }
 
 h1 {
-	color: #ffffff; 
 	font-size: 62px; 
 	text-align: center; 
 	text-transform: uppercase; 
@@ -35,12 +54,15 @@ div {
 	left: 0px;
 
 }
-		/*Se recorta lo que se ve de la imagen objet-fit*/
+/*Se recorta lo que se ve de la imagen objet-fit*/
 .imagen {
 	width: 100%; 
 	object-fit: cover;
 }
-
+img:hover {
+    border: 2px solid black;
+    filter: grayscale(80%);
+}
 .pieFoto{
 	position: absolute;
 	bottom: 0px;
@@ -58,17 +80,21 @@ figure {
 		height:auto;
 		display: block;
 		margin: auto;
-		margin-bottom: 65px;
+		margin-bottom: 20px;
 	}		
 }
 .formulario{
-	align-items: center;
+	margin: auto;
+	text-align: left;
+	width: 300px;
+	height: 225px;
 }
 fieldset{
+	width: 300px;
+	height: 300 px;
 	box-shadow: 80px 30px 30px rgba(255,0,0,0.5); 
 	border-radius: 20px;  
 	background-color:#ddd;
-	width: 400px;
   	float: left;
 	padding:10px;
 }
@@ -79,7 +105,6 @@ fieldset{
 	font-size: 400%;
 }
 .scrollmenu {
-	display: flex;
 	justify-content: center;
 	color: white;
 	padding: 3px;
@@ -96,4 +121,48 @@ fieldset{
 .ki:hover{
 	font-size:25px;
 	background-color:yellow;
+}
+.marquesina{
+	color: red;
+}
+/* Icono sol y luna*/
+.darkModeSwitch{
+    background: #3494b1;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+  .darkModeSwitch span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+.darkModeSwitch::after{
+    display:block;
+    background: #fffbf5;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}.darkModeSwitch.active{
+  background: #fdd384;
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+
 }

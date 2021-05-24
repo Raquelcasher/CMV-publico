@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nigmacode designs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style type="text/css">
+      *{
+        font-family: 'Bungee', cursive;
+      }
+      body, html{
+        height: 100%;
+        margin:0;
+      }
+      .wrapper{
+        height: 100%;
+        background-color:white;
+      }
+      .card{
+        display: inline-block;
+        margin:20px;
+        border: 1px solid rgb(207, 207, 207);
+        background-color:white;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: background-color .5s;
+      }
+      .container-btn-mode{
+        position: absolute;
+        top:20px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+        font-size:0;
+      }
+      .btn-mode{
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        border:2px solid black;
+        transition: background-color .5s;
+      }
+      .btn-mode i {
+        display: block;
+        font-size: 17px;
+        text-align: center;
+        line-height: 30px;
+      }
+      .btn-mode.sun{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right: 1px solid transparent;
+      }
+      .btn-mode.moon{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+      .active{
+        background-color:black;
+        color:#ffcd5c !important;
+      }
+      .dark-mode{
+        background-color: #0e0e0e;
+        transition:background-color .5s;
+      }
+      .dark-mode .card{
+        background-color: #1A1C1E;
+      }
+      .dark-mode h1, .dark-mode h2, .dark-mode .btn-contact{
+        color:white;
+      }
+      .dark-mode .btn-mode{
+        background-color:#1A1C1E;
+        border:1px solid white;
+        color:white;
+      }
+      h1 {
+  color: #ffffff; 
+  font-size: 62px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+footer {
+  color:white;
+}
+
+div {
+    text-align: center;
+
+}
+.contenedor{
+  position: relative;
+  top: 0px;
+  left: 0px;
+
+}
+    /*Se recorta lo que se ve de la imagen objet-fit*/
+.imagen {
+  width: 100%; 
+  object-fit: cover;
+}
+
+.pieFoto{
+  position: absolute;
+  bottom: 0px;
+  color:white;
+  left: 0px;
+}
+figure {
+  width:33%;
+  height:auto;
+  display: inline-block;
+}
+/*Responsive de las imagenes*/
+@media screen and (max-width: 900px) {
+  figure {
+    height:auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }   
+}
+.formulario{
+  margin: auto;
+  text-align: left;
+  width: 300px;
+  height: 225px;
+}
+fieldset{
+  width: 300px;
+  height: 300 px;
+  box-shadow: 80px 30px 30px rgba(255,0,0,0.5); 
+  border-radius: 20px;  
+  background-color:#ddd;
+    float: left;
+  padding:10px;
+}
+.fuente{
+  font-family: 'KoHo', sans-serif;
+}
+.fuente::first-letter{
+  font-size: 400%;
+}
+.scrollmenu {
+  justify-content: center;
+  color: white;
+  padding: 3px;
+  text-decoration: none;
+}
+.ki {
+  background-color:#FAFAFA;
+  color:#fff;
+  padding:10px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+} 
+
+.ki:hover{
+  font-size:25px;
+  background-color:yellow;
+}
+
+    </style>
+</head>
+<body>
+    <div id="page" class="wrapper">
+        <div class="container-fluid">
+                <h1 >Hola</h1>
+        </div>
+    </div>
+   <div id="id-sun" class="btn-mode sun active">
+      <i class="fas fa-sun"></i>
+   </div>
+   <div id="id-moon" class="btn-mode moon">
+      <i class="fas fa-moon"></i>
+   </div>
+</div>
+</body>
+<script>
+document.getElementById('id-sun').onclick = function(){
+  document.getElementById('page').classList.remove('dark-mode')
+  document.getElementById('id-moon').classList.remove('active')
+  this.classList.add('active')
+}
+/*Si clicamos en el botón de la luna, añadiremos la clase css dark-mode del div 
+con id page y se aplicará el estilo active a la luna*/
+document.getElementById('id-moon').onclick = function(){
+  document.getElementById('page').classList.add('dark-mode')
+  document.getElementById('id-sun').classList.remove('active')
+  this.classList.add('active')
+}</script>
+</html>
+<!--
+ https://www.nigmacode.com/diseno-web/crear-modo-nocturno-en-una-web
+ MODO NOCTURNO -->
