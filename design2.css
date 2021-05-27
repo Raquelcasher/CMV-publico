@@ -1,0 +1,233 @@
+/*
+CSS 
+web o pagina: https://raquelcasher.github.io/CMV-publico/ejer1.html
+autor: Raquel Castellano Hernández
+fecha: 14-5-2021
+RECORDAR: En caso de conflictos se aplica el estilo que se define último,
+o sea al final de este archivo o en la misma pagina html
+
+*/
+:root {
+	--fuenteDia : white;
+	--fuenteNoche: black;
+}
+.dia {
+	color: var(--fuenteDia);
+}
+.noche {
+	color: var(--fuenteNoche);
+}
+
+* {
+	box-sizing:border-box;
+  	margin:0px;
+}/*
+body {
+	background-image:url("fondo.jpg");
+}*/
+body {
+  	background-image:url("fondo.jpg");
+  	color:white;
+  	font-family: "Lato", Helvetica, sans-serif;
+}
+body.dark{
+	color:black;
+	backdrop-filter: contrast(70%);
+}
+
+h1 {
+	font-size: 62px; 
+	text-align: center; 
+	text-transform: uppercase; 
+}
+footer {
+	color:white;
+}
+
+div {
+    text-align: center;
+    font-size: 12px; 
+}
+.contenedor{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+/*Se recorta lo que se ve de la imagen objet-fit*/
+.imagen {
+	width: 100%; 
+	object-fit: cover;
+}
+img:hover {
+    border: 2px solid black;
+    filter: grayscale(80%);
+}
+.pieFoto{
+	position: absolute;
+	bottom: 0px;
+	color:white;
+	left: 0px;
+}
+figure {
+  width:33%;
+  height:auto;
+  display: inline-block;
+}
+/*Responsive de las imagenes*/
+@media screen and (max-width: 900px) {
+	figure {
+		height:auto;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
+	}		
+}
+.formulario{
+	margin: auto;
+	text-align: left;
+	width: 300px;
+	height: 225px;
+}
+fieldset{
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;  
+	background-color:#ddd;
+  	float: left;
+	padding:10px;
+}
+.fuente{
+	font-family: 'KoHo', sans-serif;
+}
+.fuente::first-letter{
+	font-size: 400%;
+}
+.scrollmenu {
+	justify-content: center;
+	color: white;
+	padding: 3px;
+	text-decoration: none;
+}
+.ki {
+	background-color:#FAFAFA;
+	color:#fff;
+	padding:10px 10px;
+	display: inline-block;
+	text-transform: uppercase;
+}	
+
+.ki:hover{
+	font-size:25px;
+	background-color:yellow;
+}
+.marquesina{
+	color: red;
+}
+/* Icono sol y luna*/
+.darkModeSwitch{
+    background: #3494b1;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.darkModeSwitch span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+.darkModeSwitch::after{
+    display:block;
+    background: #fffbf5;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}.darkModeSwitch.active{
+  background: #fdd384;
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+
+}
+.marco {
+	display: grid;
+	border-style: solid;
+	border-color: red;
+	grid-template-columns: 300px auto auto auto;
+	grid-template-rows: 70px 50px auto 40px;
+	grid-gap: 10px;
+	width: 100%;
+	height: 100vh;
+}
+.encabezado {
+	color:blue;
+	border-style: solid;
+	border-color: blue;
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 1;
+
+}
+.boton{
+	border-style: solid;
+	border-color: blue;
+	grid-column: 4 / span 1;
+	grid-row: 1 / span 1;
+}		
+.migas {
+	border-style: solid;
+	border-color: yellow;
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 1;
+}
+		
+.lado {
+	border-style: solid;
+	border-color: violet;
+	grid-column: 1 / span 1;
+	grid-row: 3 / span 1;
+}
+		
+.contenido {
+	border-style: solid;
+	border-color: violet;
+	grid-column: 2 / span 3;
+	grid-row: 3 / span 1;
+	overflow: scroll;
+}
+		
+.pie {
+	border-style: solid;
+	border-color: aqua;
+	grid-column: 1 / span 4;
+	grid-row: 4 / span 2;
+}
+.pie.h1{
+
+}
+@media screen and (max-width: 900px) {
+	.lado{
+		display: none;
+	}
+	.contenido {
+		border-style: solid;
+		border-color: violet;
+		grid-column: 1 / span 4;
+		grid-row: 3 / span 1;
+		overflow: scroll;
+	}
+}

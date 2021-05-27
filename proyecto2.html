@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: Proyecto Final-Gran Canaria
+entorno: Curso CMV-Accenture
+autor: Raquel Castellano Hernández
+fecha: 14/05/2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- Etiqueta del navegador -->
+	<title>Gran Canaria</title>
+	
+	<!-- Estilos que solo aplican a esta pagina -->
+    <link href="design2.css" rel="stylesheet"/>
+	<!-- scripts Javascript o JQuery -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+</head>
+
+
+<body>
+	<div class="marco">
+		<div class="encabezado">
+			<script src="js/main.js"></script>
+			</A> <A name="arriba"></A>
+			<!-- cabecera de pagina -->
+			<header>
+				<h1>Gran Canaria</h1>
+				<br/>
+			</header>
+		</div>
+		<div class="boton">
+			<!-- Botón -->
+		   	<button class="darkModeSwitch active" id="switch">
+		      <span><i class="fa fa-sun"></i></span>   
+		      <span><i class="fa fa-moon"></i></span>
+		   	</button> 	
+		</div>
+		<div class="migas">
+				<!-- Menú -->
+				<div class="scrollmenu">
+					<p class="ki"><a href="https:/www.google.com">Google</a> </p>
+					<p class="ki"><a href="https://www.gobiernodecanarias.org/principal/">Gobierno de canarias</a></p>
+				</div>
+			    
+		</div>
+		  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+		<div class="lado">	
+			<!--Formulario-->
+			<div class="formulario">
+				<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+			</div>
+			</br>
+		</div>
+		
+		<div class="contenido">
+			<!-- 1ª Bloque de imagenes -->
+			<div>
+				<figure class="contenedor">
+					<IMG class="imagen" SRC="sunset.jpg"><IMG>
+					<figcaption class="pieFoto">
+						Playas
+					</figcaption>
+				</figure>
+				<figure class="contenedor">
+					<IMG class="imagen" SRC="mount.jpg" ><IMG>
+					<figcaption class="pieFoto">
+						Actividades deportivas
+					</figcaption>
+				</figure>
+				<figure class="contenedor">
+					<IMG class="imagen" SRC="forest.jpg" ><IMG>
+					<figcaption class="pieFoto">
+						Caminatas / Rutas
+					</figcaption>
+				</figure>
+			</div>
+			<!-- 2º Bloque de imagenes -->
+			<div>
+				<figure class="contenedor">
+					<img class="imagen" SRC="sunset.jpg"><img>
+					<figcaption class="pieFoto">
+						Gastronomía
+					</figcaption>
+				</figure>
+				<!--https://www.grancanaria.com/turismo/es/naturaleza/espacios-naturales/listado/-->
+				<figure class="contenedor">
+					<IMG class="imagen" SRC="mount.jpg" ><IMG>
+					<figcaption class="pieFoto">
+						Recurso Natural
+					</figcaption>
+				</figure>
+				<figure class="contenedor">
+					<IMG class="imagen" SRC="forest.jpg" ><IMG>
+					<figcaption class="pieFoto">
+						Monumentos
+					</figcaption>
+				</figure>
+			</div>
+
+			<div>
+				<h2>Introducción</h2>
+				<p class="fuente">
+					Gran Canaria es una isla situada en el océano Atlántico, perteneciente a la Comunidad Autónoma de Canarias en España. Junto con las islas de Lanzarote, Fuerteventura y La Graciosa forman la provincia de Las Palmas, integrada además por los islotes de Alegranza, Montaña Clara, Roque del Este, Roque del Oeste e Islote de Lobos. Gran Canaria con una superficie de 1560, km² y una altitud de 1956 metros con el Morro de la Agujereada, es la tercera isla del archipiélago en extensión y altitud.
+				<a href="#" onclick="vermas('mas');" id="mas">...leer más</a>
+				<p id="desplegar" style="display:none;">
+					La población de la isla en 2020 era de 855 521 habitantes tratándose de la segunda isla más poblada de Canarias,​ aunque la de mayor densidad de población. La capital de la isla, Las Palmas de Gran Canaria, es la ciudad más poblada de Canarias con 381 223 habitantes,​ también es capital de la provincia oriental (Las Palmas) y de la Comunidad Autónoma de Canarias, conjuntamente con Santa Cruz de Tenerife. La ciudad, fundada en 1478, fue considerada la única capital de facto (sin significado jurídico y real) de Canarias hasta el siglo xvii. Los núcleos poblacionales colindantes a la capital conforman un área metropolitana de unos de 680 000 habitantes, primera de Canarias y novena de España. La ciudad cuenta con uno de los puertos más importantes de España y de la Unión Europea, el Puerto de la Luz y de Las Palmas.
+					<a href="#" onclick="vermas('menos');" id="menos">...leer menos</a>
+				</p>
+			</div>
+		</div>
+		<div class="pie">
+<nav class="navbar navbar-default" role="navigation">
+  <!-- El logotipo y el icono que despliega el menú se agrupan
+       para mostrarlos mejor en los dispositivos móviles -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Desplegar navegación</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Logotipo</a>
+  </div>
+
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Enlace #1</a></li>
+      <li><a href="#">Enlace #2</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Menú #1 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #5</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Buscar">
+      </div>
+      <button type="submit" class="btn btn-default">Enviar</button>
+    </form>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Enlace #3</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Menú #2 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+			<!--Hora y fecha-->
+			<div> 
+				<h3><a style="text-decoration:none;"><br/>Las Palmas de Gran Canaria, Espa&ntilde;a</a></h3> 
+				<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=es&size=medium&timezone=Atlantic%2FCanary" width="100%" height="115" frameborder="0"seamless></iframe> 
+			</div>
+			<!--Creamos un texto en movimiento de recha a izquierda-->
+			<center><MARQUEE SCROLLDELAY =170 bgcolor="white" width=50% ALIGN=BOTTOM BEHAVIOR=ALTERNATE class="marquesina">Deseamos haberle informado lo mejor posible</MARQUEE></center>
+
+			
+			<!-- Pie de pagina -->
+			<footer>
+				<br/>
+				<!--Destino de ancla inicio-->
+				<P>Volver <A href="#arriba">arriba</A>
+				<br/><br/>
+				<div>&copy; 2021 Alum.Raquel Castellano Hernández</a></div>
+			</footer>
+		</div>
+		<!--Javascript cambio dia/noche-->
+		<script>
+		/*FONDO*/
+	  	const switchButton = document.getElementById('switch');
+	 
+		switchButton.addEventListener('click', () => {
+		    document.body.classList.toggle('dark'); //toggle the HTML body the class 'dark'
+		    switchButton.classList.toggle('active');//toggle the HTML button with the id='switch' with the class 'active'
+		});
+		/*LETRAS*//*
+			$("#button").click(function(){
+				$("h1, h2, p").toggleClass("noche");
+			  });*/
+		</script>
+	</div>
+</body>
+</html>
