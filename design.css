@@ -68,9 +68,12 @@ img:hover {
 	left: 0px;
 }
 figure {
-  width:33%;
-  height:auto;
-  display: inline-block;
+  	width:33%;
+  	height:auto;
+  	display: inline-block;
+}
+.borde{
+	padding-top: 85px;
 }
 /*Responsive de las imagenes*/
 @media screen and (max-width: 900px) {
@@ -79,7 +82,7 @@ figure {
 		display: block;
 		margin: auto;
 		margin-bottom: 20px;
-	}		
+	}	
 }
 .formulario{
 	margin: auto;
@@ -157,11 +160,11 @@ fieldset{
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
     content: "";
 }.darkModeSwitch.active{
-  background: #fdd384;
+  	background: #fdd384;
 }
 .darkModeSwitch.active::after{
-  left:unset;
-  right:0;
+	left:unset;
+	right:0;
 
 }
 .tam{

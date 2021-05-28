@@ -57,20 +57,20 @@ fecha: Mayo 2021
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>Ejercicios JavaScript</h1>
-		<h2>Ejercicio 4</h2>
+		<h2>Ejercicio 2</h2>
 		<br/>
 	</header>
 	
 	<!-- bloque de contenido de la pagina -->
 	<main>
-		<div id="salida"></div>
-		<div id="Mensaje"></div>
+
 	</main>
 
 
 	<!-- pie de pagina -->
 	<footer>
 		<br/><br/><br/>
+		<p>Volver <a href="index.html">al menú</a></p>
 		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
 	</footer>
 
@@ -78,10 +78,8 @@ fecha: Mayo 2021
 		let dato,num;
         dato=window.prompt("Introduce número?", "0");
         num=parseInt(dato);
-        let resultado=num*2;
-        document.writeln(`<pre>Esto es un writenln`);
-        document.write(`Esto es un write`);
-        document.getElementById("salida").innerHTML=(`El dato es ${resultado}`);
+        num=num*2;
+        document.write("El doble es $(num)");
 	</script>
 </body>
 </html>

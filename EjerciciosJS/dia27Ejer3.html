@@ -57,29 +57,29 @@ fecha: Mayo 2021
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>Ejercicios JavaScript</h1>
-		<h2>1-Hola Mundo</h2>
+		<h2>Ejercicio 3</h2>
 		<br/>
 	</header>
 	
 	<!-- bloque de contenido de la pagina -->
 	<main>
-
+		<div id="salida"></div>
 	</main>
 
 
 	<!-- pie de pagina -->
 	<footer>
 		<br/><br/><br/>
+		<p>Volver <a href="index.html">al menú</a></p>
 		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
 	</footer>
 
 	<script>
-		let num1=0;
-		let num2=0;
-		num1=num1+1;
-		num2=num2+5;
-		alert(`El primer número ahora es ${num1}`);
-		alert(`El primer número ahora es ${num2}`);
+		let dato,num;
+        dato=window.prompt("Introduce número?", "0");
+        num=parseInt(dato);
+        let resultado=num*2;
+        document.getElementById("salida").innerHTML=(`El dato es ${resultado}`);
 	</script>
 </body>
 </html>

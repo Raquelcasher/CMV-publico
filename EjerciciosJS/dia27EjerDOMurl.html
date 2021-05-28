@@ -16,13 +16,12 @@ fecha: Mayo 2021
 	
 	  
 	<!-- importante SEO para la etiqueta del navegador -->
-	<title>Ejercicio 13B</title>
+	<title>Ejercicio 6</title>
 	
 	<!-- una fuente de Google -->
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
 	
-	<!-- una hoja de estilos externa-->
 	
 	<!-- una hoja de estilos personalizada-->
 	<link href="00-modelo.css" rel="stylesheet"/>
@@ -57,7 +56,7 @@ fecha: Mayo 2021
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>Ejercicios JavaScript</h1>
-		<h2>Ejercicio 6</h2>
+		<h2>Ejercicio DOM URL</h2>
 		<br/>
 	</header>
 	
@@ -65,44 +64,26 @@ fecha: Mayo 2021
 	<main>
 		<div id="salida"></div>
 	</main>
+	<button onclick="myFunction()">Prueba</button>
 
 
-	<!-- pie de pagina -->
+
+	<p id="screen"></p>
+	<p id="window"></p>
 
 	<script>
-		let dato;
-		let num;
-        let valores=[];
-        valores.length=2;
-        let x=0;
-        while(x<2){
-        	dato=window.prompt("Introduce número entre 1-10", "0");
-        	num=parseInt(dato);
-        	if((num>10) ||(num<1)){
-        		alert(`El numero que has introducido no es entre 1-10`);
-        	}
-        	if(isNaN(num)){
-        		alert(`El numero que has introducido no es entre 1-10`);
-        	}else{
-        		valores[x]=num;
-        		x++;
-        	}
-        }
-		if(valores[0]>valores[1]){
-			document.write(`El primer numero es mayor : ${valores[0]} </br>`);
-		}else if(valores[0]<valores[1]){
-			document.write(`El segundo numero es mayor : ${valores[1]}  </br>`);
-		}else if(valores[0]==valores[1]){
-			document.write(`Ambos numeros tienen el mismo valor: ${valores[0]} ${valores[1]} </br>`);
+		function myFunction() {
+			var w = window.innerWidth;
+  			var h = window.innerHeight;
+  			document.getElementById("screen").innerHTML = "<strong>Ancho:</strong> " + w + "<br><strong> Alto: </strong>" + h;
+		  	var x = document.baseURI;
+		  	document.getElementById("window").innerHTML = "<strong>La url de la pagina es: </strong>" + x ;
 		}
-
-        document.write(`	</br><h2>
-        					Fin del programa
-        					</h2>`);
 	</script>
-		<footer>
+	<footer>
 		<br/><br/><br/>
-		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Alum. Raquel Castellano Hernández</a></div>
+		<p>Volver <a href="index.html">al menú</a></p>
+		<div>&copy; 2020 <a target="_blank">Alum. Raquel Castellano Hernández</a></div>
 	</footer>
 
 </body>
