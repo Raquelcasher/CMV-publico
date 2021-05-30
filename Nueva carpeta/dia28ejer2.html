@@ -5,7 +5,7 @@
 HTML
 web o pagina:
 entorno: curso Accenture-CMV
-autor: Carlos Boni
+autor: Raquel Castellano Hernández
 fecha: Mayo 2021
 -->
 
@@ -16,7 +16,7 @@ fecha: Mayo 2021
 	
 	  
 	<!-- importante SEO para la etiqueta del navegador -->
-	<title>Ejercicio 6</title>
+	<title>Webstorage</title>
 	
 	<!-- una fuente de Google -->
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -56,32 +56,31 @@ fecha: Mayo 2021
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>Ejercicios JavaScript</h1>
-		<h2>Ejercicio DOM URL</h2>
+		<h2>WebStorage 28 de Mayo</h2>
 		<br/>
 	</header>
 	
-	<!-- bloque de contenido de la pagina -->
+	<!-- 
+	Botón para cambiar de color -->
 	<main>
-		<div id="salida"></div>
+		<p>Nos ecnontramos en la pagina principal</p>
+		<p>Select your favorite color:</p>
+		<input type="color" id="favcolor" name="favcolor" value="#ffffff"><br><br>
+		<button onclick="cambiarcolor()">Aplicar color de fondo</button>
+		</form>
 	</main>
-	<button onclick="myFunction()">Prueba</button>
-
-
-
-	<p id="screen"></p>
-	<p id="window"></p>
+	
 
 	<script>
-		//Guardar permanentemente ese color
-		function iniCoorFondo(){
-			
-		}
-		function myFunction() {
-			var w = window.innerWidth;
-  			var h = window.innerHeight;
-  			document.getElementById("screen").innerHTML = "<strong>Ancho:</strong> " + w + "<br><strong> Alto: </strong>" + h;
-		  	var x = document.baseURI;
-		  	document.getElementById("window").innerHTML = "<strong>La url de la pagina es: </strong>" + x ;
+		function cambiarcolor(){
+			//Otener color del formulario
+			let colorfondo=$("#favcolor").val();
+			//Aplicar al fondo
+			$("body").css("background-color",colorfondo);
+			//Guardar valor de color en mi localStorage
+			localStorage.setItem("colorFondoR",colorfondo);
+
+
 		}
 	</script>
 	<footer>

@@ -5,7 +5,7 @@
 HTML
 web o pagina:
 entorno: curso Accenture-CMV
-autor: Carlos Boni
+autor: Raquel Castellano Hernández
 fecha: Mayo 2021
 -->
 
@@ -16,7 +16,7 @@ fecha: Mayo 2021
 	
 	  
 	<!-- importante SEO para la etiqueta del navegador -->
-	<title>Ejercicio 6</title>
+	<title>Webstorage</title>
 	
 	<!-- una fuente de Google -->
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
@@ -51,38 +51,50 @@ fecha: Mayo 2021
 </head>
 
 
-<body>
+<body onload="iniColorFondo()">
 
 	<!-- cabecera de pagina -->
 	<header>
 		<h1>Ejercicios JavaScript</h1>
-		<h2>Ejercicio DOM URL</h2>
+		<h2>WebStorage 28 de Mayo</h2>
 		<br/>
 	</header>
 	
-	<!-- bloque de contenido de la pagina -->
+	<!-- 
+	Botón para cambiar de color -->
 	<main>
-		<div id="salida"></div>
+
+		<p>Estamos en la pagina de inicio</p>
+		<br/>
+		<p>Elija su color de fondo:</p>
+		<input type="color" id="micolor" name="favcolor" value="#9e9e9e">
+		<button onclick="cambiarColor()">Aplicar color de fondo</button>
+
 	</main>
-	<button onclick="myFunction()">Prueba</button>
-
-
-
-	<p id="screen"></p>
-	<p id="window"></p>
+	
 
 	<script>
-		//Guardar permanentemente ese color
-		function iniCoorFondo(){
+		function cambiarColor() {
+			// obtengo el color de la elección del formulario
+			let colorFondo=$("#micolor").val();
 			
+			// aplico el color al fondo de la pagina
+			$("body").css("background-color",colorFondo);
+
+			// lo recuerdo de forma permanente
+			localStorage.setItem("colorDeFondo",colorFondo);
+
+			// para recordar solo hasta que finalice la sesion
+			// sessionStorage.setItem("colorDeFondo",colorFondo);
+			
+
 		}
-		function myFunction() {
-			var w = window.innerWidth;
-  			var h = window.innerHeight;
-  			document.getElementById("screen").innerHTML = "<strong>Ancho:</strong> " + w + "<br><strong> Alto: </strong>" + h;
-		  	var x = document.baseURI;
-		  	document.getElementById("window").innerHTML = "<strong>La url de la pagina es: </strong>" + x ;
+		function iniColorFondo(){
+			if (localStorage.getItem("colorDeFondo")){
+				$("body").css("background-color",localStorage.getItem("colorDeFondo"));
+			}
 		}
+		
 	</script>
 	<footer>
 		<br/><br/><br/>

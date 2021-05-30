@@ -10,34 +10,32 @@ o sea al final de este archivo o en la misma pagina html
 :root {
 	--fuenteDia : white;
 	--fuenteNoche: black;
+	--light: #dddddd;
+	--dark: #000;
 }
 .dia {
 	color: var(--fuenteDia);
 }
 .noche {
 	color: var(--fuenteNoche);
+	/*backdrop-filter: contrast(70%);*/
 }
-
 * {
 	box-sizing:border-box;
   	margin:0px;
-}/*
-body {
-	background-image:url("fondo.jpg");
-}*/
+}
 body {
   	background-image:url("fondo.jpg");
   	color:white;
   	font-family: "Lato", Helvetica, sans-serif;
 }
-body.dark{
-	color:black;
-	backdrop-filter: contrast(70%);
-}
 
 h1 {
 	font-family: 'BioRhyme', serif;
 
+}
+h2{
+	color: white;
 }
 footer {
 	color:white;
@@ -50,7 +48,6 @@ div {
 	position: relative;
 	top: 0px;
 	left: 0px;
-
 }
 /*Se recorta lo que se ve de la imagen objet-fit*/
 .imagen {
@@ -99,6 +96,9 @@ fieldset{
   	float: left;
 	padding:10px;
 }
+p{
+	color: white;
+}
 .fuente{
 	font-family: 'KoHo', sans-serif;
 }
@@ -118,13 +118,24 @@ fieldset{
 	display: inline-block;
 	text-transform: uppercase;
 }	
-
 .ki:hover{
 	font-size:25px;
 	background-color:yellow;
 }
 .marquesina{
 	color: red;
+}
+.tam{
+	margin: auto;
+	width: 33%;
+    height: auto;
+    display: inline-block;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
 }
 /* Icono sol y luna*/
 .darkModeSwitch{
@@ -147,7 +158,6 @@ fieldset{
     background: none;
 }
 .darkModeSwitch::after{
-    display:block;
     background: #fffbf5;
     width: 2.4rem;
     height: 2.4rem;
@@ -165,12 +175,4 @@ fieldset{
 .darkModeSwitch.active::after{
 	left:unset;
 	right:0;
-
 }
-.tam{
-	margin: auto;
-	width: 33%;
-    height: auto;
-    display: inline-block;
-}
-

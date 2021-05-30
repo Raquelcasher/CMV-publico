@@ -1,0 +1,26 @@
+   <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=10" />
+    <title>Modo Oscuro</title>
+    <link rel="stylesheet" href="modo-dia.css" id="theme" />
+  </head>
+  <body>
+    <h1>DEMOSTRACIÓN DE MODO OSCURO CAMBIANDO LA HOJA DE ESTILOS.</h1>
+<div>
+  <button onclick="switchSheet()">Switch</button>
+</div>
+    <script >
+    	function switchSheet() {
+        let theme = document.getElementById("theme");
+
+        if (theme.getAttribute("href") == "modo-dia.css") {
+          theme.href = "modo-noche.css";
+        } else {
+          theme.href = "modo-dia.css";
+        }
+      }
+    </script>
+  </body>
+</html>
