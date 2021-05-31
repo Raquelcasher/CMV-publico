@@ -213,7 +213,7 @@ fecha: 14/05/2021
 		<div style="text-align:center; "> 
 			<h3><a style="text-decoration:none;"><br/>Las Palmas de Gran Canaria, Espa&ntilde;a</a></h3> 
 			<form name="form_reloj">
-			<input type="text" name="reloj" size="10" style="background-color : Black; color : White; font-family : Verdana, Arial, Helvetica; font-size : 8pt; text-align : center;" onfocus="window.document.form_reloj.reloj.blur()">
+			<input type="text" name="reloj" size="10" class="reloj" onfocus="window.document.form_reloj.reloj.blur()">
 			</form>
 		</div>
 		<!--Creamos un texto en movimiento de recha a izquierda-->
@@ -228,66 +228,69 @@ fecha: 14/05/2021
 			<div>Copyright © Raquel Castellano Hernández 2021</a></div>
 		</footer>
 		<script>
-		/*FONDO*/
-	  	const switchButton = document.getElementById('switch');
-	 
-		switchButton.addEventListener('click', () => {
-		    //toggle the HTML body the class 'dark'
-		    $("*, p").toggleClass("noche");
-		    switchButton.classList.toggle('active')//toggle the HTML button with the id='switch' with the class 'active'
-		});
-		$(document).ready(function(){
-			$(window).scroll(function () {
-					if ($(this).scrollTop() > 50) {
-						$('#back-to-top').fadeIn();
-					} else {
-						$('#back-to-top').fadeOut();
-					}
-				});
-				// scroll body to 0px on click
-				$('#back-to-top').click(function () {
-					$('body,html').animate({
-						scrollTop: 0
-					}, 400);
+			/*FONDO*/
+		  	const switchButton = document.getElementById('switch');
+		 
+			switchButton.addEventListener('click', () => {
+			    //toggle the HTML body the class 'dark'
+			    $("*, p").toggleClass("noche");
+			    switchButton.classList.toggle('active')//toggle the HTML button with the id='switch' with the class 'active'
+			});
+			/* Boton volver arriba*/
+			$(document).ready(function(){
+				$(window).scroll(function () {
+						if ($(this).scrollTop() > 50) {
+							$('#back-to-top').fadeIn();
+						} else {
+							$('#back-to-top').fadeOut();
+						}
+					});
+					// scroll body to 0px on click
+					$('#back-to-top').click(function () {
+						$('body,html').animate({
+							scrollTop: 0
+							},400);
 					return false;
 				});
-		});
-		function mueveReloj(){
-		    momentoActual = new Date()
-		    hora = momentoActual.getHours()
-		    minuto = momentoActual.getMinutes()
-		    segundo = momentoActual.getSeconds()
+			});
+			/*Actualización del reloj constante*/
+			function mueveReloj(){
+			    momentoActual = new Date()
+			    hora = momentoActual.getHours()
+			    minuto = momentoActual.getMinutes()
+			    segundo = momentoActual.getSeconds()
 
-		    str_segundo = new String (segundo)
-		    if (str_segundo.length == 1){
-		       segundo = "0" + segundo
-		    }
+			    str_segundo = new String (segundo)
+			    if (str_segundo.length == 1){
+			       segundo = "0" + segundo
+			    }
 
-		    str_minuto = new String (minuto)
-		    if (str_minuto.length == 1){
-		       minuto = "0" + minuto
-		    }
+			    str_minuto = new String (minuto)
+			    if (str_minuto.length == 1){
+			       minuto = "0" + minuto
+			    }
 
-		    str_hora = new String (hora)
-		    if (str_hora.length == 1){
-		       hora = "0" + hora
-		    }
+			    str_hora = new String (hora)
+			    if (str_hora.length == 1){
+			       hora = "0" + hora
+			    }
 
-		    horaImprimible = hora + " : " + minuto + " : " + segundo
+			    horaImprimible = hora + " : " + minuto + " : " + segundo
 
-		    document.form_reloj.reloj.value = horaImprimible
+			    document.form_reloj.reloj.value = horaImprimible
 
-		    setTimeout("mueveReloj()",1000)
-		}
-		function vermas(id){
-			if(id=="mas"){
-				document.getElementById("desplegar").style.display="block";   
-				document.getElementById("mas").style.display="none"; 
-			}else{
-				document.getElementById("desplegar").style.display="none";
-				document.getElementById("mas").style.display="inline";
+			    setTimeout("mueveReloj()",1000)
 			}
-		}
+			/*Despliege de texto leer mas - leer menos*/
+			function vermas(id){
+				if(id=="mas"){
+					document.getElementById("desplegar").style.display="block";   
+					document.getElementById("mas").style.display="none"; 
+				}else{
+					document.getElementById("desplegar").style.display="none";
+					document.getElementById("mas").style.display="inline";
+				}
+			}
 		</script>
 	</div>
 </body>

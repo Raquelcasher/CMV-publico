@@ -1,0 +1,91 @@
+<!--pasos ejercicio con XML:
+ generar el array desde el XML
+ AÑADIR un botón para cada orden:
+ 1 - ascendente por nombre de usuario
+ 2 - asecendente por clave de usuario
+ 3 - mostrar solamente el usuario solicitado
+    (input - .slice .indexOf)
+
+ mostrar clave del usuario del campo input-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: JS/XML
+autor: Raquel Castellano Hernández
+fecha: 31 Mayo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Trabajando con ficheros XML</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="27-abr-xml.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="27-abr-xml.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body onload="leerXML0()">
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>31 Mayo</h1>
+		<br/>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<p>Contenido XML:</p>
+		<button type="button" onclick="ascNombre()">Ascendente por nombre de usuario</button>
+		<button type="button" onclick="ascClave()">Asecendente por clave de usuario</button>
+		<input type="text" id="nom" placeholder="usr.."><
+		<button type="button" onclick="mostrar()">Mostrar solamente el usuario solicitado</button>
+			
+		<p id="contenidoXML">
+		<p id="solicitado"></p>		
+		</p>
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Raquel Castellano Hernández</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

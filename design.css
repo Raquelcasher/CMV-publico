@@ -131,6 +131,13 @@ p{
     height: auto;
     display: inline-block;
 }
+.reloj{
+	background-color : Black; 
+	color : White; 
+	font-family : Verdana, Arial, Helvetica; 
+	font-size : 8pt; 
+	text-align : center;
+}
 .back-to-top {
     position: fixed;
     bottom: 25px;
