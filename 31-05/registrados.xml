@@ -20,12 +20,10 @@
 	<usuario nro="4">
 		<nombre>USR4</nombre>
 		<clave>clave4</clave>
-		
 	</usuario>
 	
 	<usuario nro="5">
 		<nombre>CANDIDO</nombre>
 		<clave>VIDAL</clave>
-		
 	</usuario>	
 </registrados>

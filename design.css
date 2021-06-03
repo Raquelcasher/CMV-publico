@@ -183,3 +183,18 @@ p{
 	left:unset;
 	right:0;
 }
+//Botón leer más
+.btn-read-more{
+	background:black;
+	padding:6px 12px;
+	border-radius: 4px;
+	color:white;
+	text-transform: uppercase;
+	font-size:12px;
+	text-decoration: none;
+}
+
+.btn-read-more:hover{
+	background-color:red;
+	color:white;
+}
