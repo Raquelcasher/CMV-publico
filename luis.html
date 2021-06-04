@@ -29,7 +29,43 @@ fecha: 14/05/2021
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-	
+	<style>
+		.goBack {
+  			background-color: #70dbcf;
+		  	border-radius: 30px;
+		  	padding: 0.5em 1em;
+			-webkit-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+			top: 2.5em;
+			width: 120px;
+			right: 4.5em;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+  			justify-content: center;
+			-webkit-box-orient: horizontal;
+			-webkit-box-direction: normal;
+			    -ms-flex-flow: row nowrap;
+			flex-flow: row nowrap;
+			-webkit-box-pack: center;
+				-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+				-ms-flex-align: center;
+			align-items: center;
+		}
+		.goBack:hover {
+		  	-webkit-transform: scale(1.1);
+		    	    transform: scale(1.1);
+		}
+		.goBack:active {
+		  	-webkit-transform: scale(0.9);
+		  			transform: scale(0.9);
+		}
+		.goBack i {
+		  	margin-right: 0.5em;
+		}
+	</style>
 	<!-- cabecera de pagina -->
 	<div>
 		<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
@@ -64,7 +100,7 @@ fecha: 14/05/2021
 			      	</li>
 			      	<li class="nav-item ml-md-auto"><a href="#" class="btn btn-primary switch ">Switch Light/Dark</a></li>
 			    </ul>	
-	<!-- Botón 
+			<!-- Botón
 			    <ul class="ml-auto">
 				        <button class="darkModeSwitch active" id="switch">
 					      	<span><i class="fa fa-sun"></i></span> 
@@ -215,14 +251,19 @@ fecha: 14/05/2021
 		</div>
 		<!--Creamos un texto en movimiento de recha a izquierda-->
 		<center><MARQUEE SCROLLDELAY =170 bgcolor="white" width=50% ALIGN=BOTTOM BEHAVIOR=ALTERNATE class="marquesina">Deseamos haberle informado lo mejor posible</MARQUEE></center>
-
-
+		<div style="display: flex;justify-content: center;">
+			<a class="goBack" href="file:///D:/xamp/htdocs/CMV-publico/luis.html#"> 
+        		<i class="fas fa-arrow-circle-left"></i> 
+        		<p class="goBack__p">Volver</p>
+   			</a>
+   		</div>
 		<!-- Pie de pagina -->
 		<footer>
+			
 			<br/>
 			<!--Destino de ancla inicio-->
 			<br/>
-			<div>Copyright © Raquel Castellano Hernández 2021</a></div>
+			<div>Copyright © Raquel Castellano Hernández 2021</div>
 		</footer>
 		<script>
 			$('.switch').click(()=>{

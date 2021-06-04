@@ -20,10 +20,6 @@
 		<nombre>Foto5</nombre>
 		<url>https://www.holaislascanarias.com/sites/default/files/styles/16_9_desktop/public/resources/header_images/PH592-cab-D.jpg?itok=LiKe4y_4</url>	
 	</foto>
-	<foto nro="6">
-		<nombre>Foto6</nombre>
-		<url>https://www.fotonazos.es/wp-content/uploads/2018/10/Playa-de-Puerto-Rico-1024x641.jpg</url>	
-	</foto>	
 	<foto nro="7">
 		<nombre>Foto7</nombre>
 		<url>https://turismo.mogan.es/images/beaches/taurito.jpg</url>	
@@ -38,11 +34,7 @@
 	</foto>	
 	<foto nro="10">
 		<nombre>Foto10</nombre>
-		<url>https://www.grancanaria.com/turismo/fileadmin/imagenes/fotos/3856.jpg</url>	
-	</foto>	
-	<foto nro="11">
-		<nombre>Foto11</nombre>
-		<url>https://www.grancanaria.com/turismo/fileadmin/diseno2014/img/golf/slider/01.anfi_tauro.jpg</url>	
+		<url>https://www.grancanaria.com/turismo/fileadmin/imagenes/fotos/3856.jpg</url>
 	</foto>	
 	<foto nro="12">
 		<nombre>Foto12</nombre>
@@ -59,10 +51,6 @@
 	<foto nro="15">
 		<nombre>Foto15</nombre>
 		<url>https://joanseguidor.com/wp-content/uploads/2020/10/gran-canaria-bike-week-4.jpg</url>	
-	</foto>	
-	<foto nro="16">
-		<nombre>Foto16</nombre>
-		<url>https://ciclored.com/wp-content/uploads/2018/12/CANARIAS-10-copia.jpg</url>	
 	</foto>	
 	<foto nro="17">
 		<nombre>Foto17</nombre>

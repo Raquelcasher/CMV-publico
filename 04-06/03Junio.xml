@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+	<foto nro="1">
+		<nombre>Foto1</nombre>
+		<url>https://static2.canarias7.es/www/multimedia/202010/23/media/cortadas/154580349--624x437.JPG</url>	
+	</foto>
+	<foto nro="2">
+		<nombre>Foto2</nombre>
+		<url>https://www.canterasvistaplaya.com/files/slider/20170605-102337-4996_bg.jpg</url>	
+	</foto>
+	<foto nro="3">
+		<nombre>Foto3</nombre>
+		<url>https://live.staticflickr.com/6105/6257869923_38b0d30bdf_b.jpg</url>	
+	</foto>	
+	<foto nro="4">
+		<nombre>Foto4</nombre>
+		<url>https://www.holaislascanarias.com/sites/default/files/styles/masonry_image/public/resources/resource_image/san_agustin-gran_canaria_2.jpg?itok=qwmj5Y-p</url>	
+	</foto>
+	<foto nro="5">
+		<nombre>Foto5</nombre>
+		<url>https://www.holaislascanarias.com/sites/default/files/styles/16_9_desktop/public/resources/header_images/PH592-cab-D.jpg?itok=LiKe4y_4</url>	
+	</foto>
+	<foto nro="7">
+		<nombre>Foto7</nombre>
+		<url>https://turismo.mogan.es/images/beaches/taurito.jpg</url>	
+	</foto>	
+	<foto nro="8">
+		<nombre>Foto8</nombre>
+		<url>https://aws.traveler.es/prod/designs/v1/assets/1200x628/3857.jpg</url>	
+	</foto>	
+	<foto nro="9">
+		<nombre>Foto9</nombre>
+		<url>https://www.solactualidad.com/img/noticias/10234.jpg</url>	
+	</foto>	
+	<foto nro="10">
+		<nombre>Foto10</nombre>
+		<url>https://www.grancanaria.com/turismo/fileadmin/imagenes/fotos/3856.jpg</url>
+	</foto>	
+	<foto nro="12">
+		<nombre>Foto12</nombre>
+		<url>https://www.spaingolf.holiday/slideshow/pictures/course/209/portugal-golf-anfi-tauro-img1.jpg</url>	
+	</foto>	
+	<foto nro="13">
+		<nombre>Foto13</nombre>
+		<url>https://www.spaingolf.holiday/slideshow/pictures/course/209/portugal-golf-anfi-tauro-img1.jpg</url>	
+	</foto>	
+	<foto nro="14">
+		<nombre>Foto14</nombre>
+		<url>https://cdn1.yumping.com/emp/fotos/6/4/4/0/6/tm_p-64406-36522074-1587823561324370-827063907817357312-n_15809201792896.jpg</url>	
+	</foto>	
+	<foto nro="15">
+		<nombre>Foto15</nombre>
+		<url>https://joanseguidor.com/wp-content/uploads/2020/10/gran-canaria-bike-week-4.jpg</url>	
+	</foto>	
+	<foto nro="17">
+		<nombre>Foto17</nombre>
+		<url>https://www.ciclismoafondo.es/uploads/s1/76/52/03/7/gran-canaria-bike-week-apertura-web.jpeg</url>	
+	</foto>	
+	<foto nro="18">
+		<nombre>Foto18</nombre>
+		<url>https://www.barcelo.com/guia-turismo/wp-content/uploads/2019/11/Anfi-del-Mar_1.jpg</url>	
+	</foto>	
+	<foto nro="19">
+		<nombre>Foto19</nombre>
+		<url>https://www.tegustaviajar.com/wp-content/uploads/2019/02/playa-anfi-del-mar.jpg</url>	
+	</foto>	
+</book>

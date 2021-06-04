@@ -20,7 +20,7 @@ function ascNombre() {
   let tabla="";
   registrados.forEach((usuario) => {
     usuario.forEach((datos) => {
-      tabla = "<table><tr><th>Empleado</th><th>Clave</th></tr>";
+      tabla = "<table><tr><th>Empleado</th><th>Foto</th></tr>";
       for (i = 0; i <registrados.length; i++) { 
         // leo las etiquetas que me interesan del objeto
         usrNom = registrados[i][0];
@@ -89,7 +89,7 @@ function leerXML0() {
       miFuncion(this,"Desde GitHub con atributos");
     }
   };
-  xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados2.xml", true);
+  xhr.open("GET", "https://raquelcasher.github.io/CMV-publico/03-05/03Junio.xml", true);
   xhr.send();
 }
 
@@ -100,15 +100,15 @@ function miFuncion(xml,fuente) {
   var usuario = [];
   var xmlDoc = xml.responseXML;
   var tabla=fuente + "<br/>";
-  var x = xmlDoc.getElementsByTagName("usuario");
+  var x = xmlDoc.getElementsByTagName("foto");
   
-  tabla += "<table><tr><th>Empleado</th><th>Clave</th></tr>";
+  tabla += "<table><tr><th>Nombre</th><th>Imagen</th></tr>";
   for (i = 0; i <x.length; i++) { 
   // leo las etiquetas que me interesan del objeto
   usrNom = x[i].getElementsByTagName("nombre")[0].childNodes[0].nodeValue;
-  usrPsw = x[i].getElementsByTagName("clave")[0].childNodes[0].nodeValue;
+  usrPsw = x[i].getElementsByTagName("url")[0].childNodes[0].nodeValue;
     // actualizo la tabla de visualización
-  tabla += "<tr><td>" + usrNom + "</td><td>" + usrPsw + "</td></tr>";
+  tabla += "<tr><td>" + usrNom + "</td><td><img src='"+usrPsw+"'></td></tr>";
   // actualizo el array bidimensional con los usuarios registrados
   usuario = [usrNom,usrPsw];
   registrados.push(usuario);
