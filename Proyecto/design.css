@@ -1,0 +1,254 @@
+/*
+CSS 
+web o pagina: https://raquelcasher.github.io/CMV-publico/ejer1.html
+autor: Raquel Castellano Hernández
+fecha: 14-5-2021
+RECORDAR: En caso de conflictos se aplica el estilo que se define último,
+o sea al final de este archivo o en la misma pagina html
+
+*/
+:root {
+	--fuenteDia : white;
+	--fuenteNoche: black;
+	--light: #dddddd;
+	--dark: #000;
+}
+.dia {
+	color: var(--fuenteDia);
+}
+.noche {
+	color: var(--fuenteNoche);
+	/*backdrop-filter: contrast(70%);*/
+}
+
+* {
+	box-sizing:border-box;
+  	margin:0px;
+}
+nav{
+	z-index: 10;
+  	transition: all 0.3s;
+}
+nav.navShadow {
+  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  height: 60px;
+}
+body {
+  	background-image:url("fondo.jpg");
+  	color:white;
+  	font-family: "Lato", Helvetica, sans-serif;
+  	/*Marco del grid
+  	display: grid;
+	border-style: solid;
+	border-color: red;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 150px 1000px auto ;
+	grid-gap: 10px;
+	height: 2900px;*/
+}
+.encabezado {
+	border-style: solid;
+	border-color: blue;
+	grid-column: 1 / span 4;
+	grid-row: 1 / span 2;
+}		
+.contenido {
+	border-style: solid;
+	border-color: violet;
+	grid-column: 1 / span 4;
+	grid-row: 2 / span 1;
+	overflow: scroll;
+	width: 100%;
+	
+}
+.grid{
+	padding-top: 85px;
+	display: grid;
+	grid-template-columns: 20%  20%  20%  20%  20%;
+	grid-template-rows: auto auto auto ;
+	grid-gap: 10px;
+}
+.tam{
+	margin: auto;
+	width: 100%;
+    height: auto;
+   	display: inline-block;
+}
+.cuadro1{
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+}
+.cuadro2{
+	grid-column:3/ span 1;
+	grid-row: 1 / span 1;
+}
+		
+.pie {
+	border-style: solid;
+	border-color: balck;
+	grid-column: 1 / span 4;
+	grid-row: 3 / span 1;
+	}
+
+h1 {
+	font-family: 'BioRhyme', serif;
+
+}
+h2{
+	color: white;
+}
+footer {
+	color:white;
+}
+
+div {
+    text-align: center;
+}
+.contenedor{
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+/*Se recorta lo que se ve de la imagen objet-fit*/
+.imagen {
+	width: 100%; 
+	object-fit: cover;
+}
+img:hover {
+    border: 2px solid black;
+    filter: grayscale(80%);
+}
+.pieFoto{
+	position: absolute;
+	bottom: 0px;
+	color:white;
+	left: 0px;
+}
+.borde{
+	padding-top: 85px;
+}
+/*Responsive de las imagenes*/
+@media screen and (max-width: 382px) {
+	.grid {
+		height:auto;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
+		padding-top: 125px;
+	}	
+}
+.formulario{
+	margin: auto;
+	text-align: left;
+	width: 300px;
+	height: 225px;
+}
+fieldset{
+	width: 300px;
+	height: 300 px;
+	box-shadow: 80px 30px 30px rgba(255,0,0,0.5); 
+	border-radius: 20px;  
+	background-color:#ddd;
+  	float: left;
+	padding: 10px;
+}
+.cuadroForm{
+	padding-left: 150px;
+}
+p{
+	color: white;
+}
+.fuente{
+	font-family: 'KoHo', sans-serif;
+}
+.fuente::first-letter{
+	font-size: 400%;
+}
+.scrollmenu {
+	justify-content: center;
+	color: white;
+	padding: 3px;
+	text-decoration: none;
+}
+.ki {
+	background-color:#FAFAFA;
+	color:#fff;
+	padding:10px 10px;
+	display: inline-block;
+	text-transform: uppercase;
+}	
+.ki:hover{
+	font-size:25px;
+	background-color:yellow;
+}
+.marquesina{
+	color: red;
+}
+
+.reloj{
+	background-color : Black; 
+	color : White; 
+	font-family : Verdana, Arial, Helvetica; 
+	font-size : 8pt; 
+	text-align : center;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+/* Icono sol y luna*/
+.darkModeSwitch{
+    background: #3494b1;
+    display:flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+ .darkModeSwitch span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    display:block;
+    color:#fff;
+    background: none;
+}
+.darkModeSwitch::after{
+    background: #fffbf5;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top:0;
+    left:0;
+    right:unset;
+    border-radius: 3rem;
+    transition: all .5s ease;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+    content: "";
+}.darkModeSwitch.active{
+  	background: #fdd384;
+}
+.darkModeSwitch.active::after{
+	left:unset;
+	right:0;
+}
+//Botón leer más
+.btn-read-more{
+	background:black;
+	padding:6px 12px;
+	border-radius: 4px;
+	color:white;
+	text-transform: uppercase;
+	font-size:12px;
+	text-decoration: none;
+}
+
+.btn-read-more:hover{
+	background-color:red;
+	color:white;
+}

@@ -80,7 +80,6 @@ function mostrar() {
   document.getElementById("solicitado").innerHTML = sol;
 }
 
-
 function leerXML0() {
   // lee desde GitHub.
   var xhr = new XMLHttpRequest();
@@ -123,3 +122,20 @@ function miFuncion(xml,fuente) {
     });
   });
 }
+import { createPopper } from '@popperjs/core';
+import './styles.css';
+
+const popcorn = document.querySelector('#popcorn');
+const tooltip = document.querySelector('#tooltip');
+
+createPopper(popcorn, tooltip, {
+  placement: 'top',
+  modifiers: [
+    {
+      name: 'offset',
+      options: {
+        offset: [0, 8],
+      },
+    },
+  ],
+});
