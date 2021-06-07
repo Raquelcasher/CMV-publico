@@ -26,17 +26,6 @@ fecha: Marzo 2021
 	
 	<!-- solo aquellos estilos que solo aplican a esta pagina -->
     <style>
-    	:root {
-			--fuenteDia : #ff0000;
-			--fuenteNoche: #0000ff;
-		}
-		.dia{
-			color: var(--fuenteDia);
-		}
-		.noche{
-			color: var(--fuenteNoche);
-			background-color: black;
-		}
 		*{
 		  box-sizing: border-box;
 		  padding: 0;
@@ -76,27 +65,7 @@ fecha: Marzo 2021
 		li:hover{
   			font-size:25px;
   			background-color:yellow;
-		}
-		.imagen {
-			width: 100%; 
-			object-fit: cover;
-		}
-		img:hover {
-		    border: 2px solid black;
-		    filter: grayscale(80%);
-		}
-		.pieFoto{
-			position: absolute;
-			bottom: 0px;
-			color:white;
-			left: 0px;
-		}
-		figure {
-		  width:30%;
-		  height:auto;
-		  display: inline-block;
-		}
-				/*Responsive de las imagenes*/
+		}				/*Responsive de las imagenes*/
 		@media screen and (max-width: 1125px) {
 			figure {
 				height:auto;
@@ -261,7 +230,7 @@ fecha: Marzo 2021
 			</br>
 		</div>	
 		<div>
-			<h2>Video con subtítulo</h2>
+			<h2 class="fuente">Video con subtítulo</h2>
 			<center>
 			<video  height="50%" width="70%" controls crossorigin>
                 <source src="https://raquelcasher.github.io/CMV-publico/07-06/video.mp4" type="video/mp4">
