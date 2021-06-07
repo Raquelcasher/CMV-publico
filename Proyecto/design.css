@@ -33,46 +33,88 @@ nav.navShadow {
   box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   height: 60px;
 }
+
 body {
   	background-image:url("fondo.jpg");
   	color:white;
   	font-family: "Lato", Helvetica, sans-serif;
-  	/*Marco del grid
-  	display: grid;
-	border-style: solid;
-	border-color: red;
-	grid-template-columns: auto auto auto auto;
-	grid-template-rows: 150px 1000px auto ;
-	grid-gap: 10px;
-	height: 2900px;*/
 }
-.encabezado {
-	border-style: solid;
-	border-color: blue;
-	grid-column: 1 / span 4;
-	grid-row: 1 / span 2;
-}		
-.contenido {
-	border-style: solid;
-	border-color: violet;
-	grid-column: 1 / span 4;
-	grid-row: 2 / span 1;
-	overflow: scroll;
-	width: 100%;
-	
-}
+
 .grid{
 	padding-top: 85px;
 	display: grid;
 	grid-template-columns: 20%  20%  20%  20%  20%;
 	grid-template-rows: auto auto auto ;
-	grid-gap: 10px;
+	grid-gap: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 .tam{
 	margin: auto;
 	width: 100%;
     height: auto;
    	display: inline-block;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 80px; /* Location of the box */
+  left: 0;
+  top: 0;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.tama{
+	width: 500px;
+	height: 300px;
+	 left:0px;
+   right:0px;
+   top:0px;
+   margin:auto;
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/*Se recorta lo que se ve de la imagen objet-fit*/
+.imagen {
+	width: 100%; 
+	object-fit: cover;
+}
+img:hover {
+    border: 2px solid black;
+    filter: grayscale(80%);
 }
 .cuadro1{
 	grid-column: 1 / span 1;
@@ -82,7 +124,30 @@ body {
 	grid-column:3/ span 1;
 	grid-row: 1 / span 1;
 }
-		
+.cuadro3{
+	grid-column:5/ span 1;
+	grid-row: 1 / span 1;
+}	
+.cuadro4{
+	grid-column:2/ span 1;
+	grid-row: 2 / span 1;
+}	
+.cuadro5{
+	grid-column:4/ span 1;
+	grid-row: 2 / span 1;
+}	
+.cuadro6{
+	grid-column:1/ span 1;
+	grid-row: 3 / span 1;
+}	
+.cuadro7{
+	grid-column:3/ span 1;
+	grid-row: 3 / span 1;
+}	
+.cuadro8{
+	grid-column:5/ span 1;
+	grid-row: 3 / span 1;
+}	
 .pie {
 	border-style: solid;
 	border-color: balck;
@@ -109,15 +174,7 @@ div {
 	top: 0px;
 	left: 0px;
 }
-/*Se recorta lo que se ve de la imagen objet-fit*/
-.imagen {
-	width: 100%; 
-	object-fit: cover;
-}
-img:hover {
-    border: 2px solid black;
-    filter: grayscale(80%);
-}
+
 .pieFoto{
 	position: absolute;
 	bottom: 0px;
@@ -136,6 +193,10 @@ img:hover {
 		margin-bottom: 20px;
 		padding-top: 125px;
 	}	
+	nav.navShadow {
+	  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+	  height: 120px;
+	}
 }
 .formulario{
 	margin: auto;
@@ -182,7 +243,7 @@ p{
 	background-color:yellow;
 }
 .marquesina{
-	color: red;
+	color: blue;
 }
 
 .reloj{
