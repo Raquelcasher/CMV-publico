@@ -1,9 +1,4 @@
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<!-- Etiqueta del navegador -->
-	<title>Gran Canaria</title>
 	<!-- Estilos que solo aplican a esta pagina -->
 	<link href="app.component.css" rel="stylesheet" />
 	<!-- scripts Javascript o JQuery -->
@@ -14,9 +9,8 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-</head>
 
-<body  >
+<body>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
@@ -28,8 +22,7 @@
 
 	<!-- cabecera de pagina -->
 	<div>
-		<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
-				class="fas fa-chevron-up"></i></a>
+		<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 		<!-- Menú -->
 		<nav class=" navbar navbar-expand-lg navbar-light fixed-top bg-light">
 			<a class="navbar-brand" href="#">
@@ -437,15 +430,7 @@
 				</div>
 			</div>	
 	</div>	
-			<h2>Introducción</h2>
-
-			<div class="fuente">
-				Gran Canaria es una isla situada en el océano Atlántico, perteneciente a la Comunidad Autónoma de
-				Canarias en España. Junto con las islas de Lanzarote, Fuerteventura y La Graciosa forman la provincia de
-				Las Palmas, integrada además por los islotes de Alegranza, Montaña Clara, Roque del Este, Roque del
-				Oeste e Islote de Lobos. Gran Canaria con una superficie de 1560, km² y una altitud de 1956 metros con
-				el Morro de la Agujereada, es la tercera isla del archipiélago en extensión y altitud.
-			</div>	
+			<app-menu></app-menu>
 			<app-mostrar-ocultar></app-mostrar-ocultar>
 			
 	
@@ -557,14 +542,5 @@
 					return false;
 				});
 			});
-			function vermas(id) {
-				if (id == "mas") {
-					document.getElementById("desplegar").style.display = "block";
-					document.getElementById("mas").style.display = "none";
-				} else {
-					document.getElementById("desplegar").style.display = "none";
-					document.getElementById("mas").style.display = "inline";
-				}
-			}
 		</script>
 	</div>

@@ -1,0 +1,7 @@
+
+.fuente{
+	font-family: 'KoHo', sans-serif;
+}
+.fuente::first-letter{
+	font-size: 400%;
+}

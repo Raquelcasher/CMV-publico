@@ -7,6 +7,19 @@ RECORDAR: En caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
 */
+.rojo{
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+.blue{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
 :root {
 	--fuenteDia : white;
 	--fuenteNoche: black;
@@ -218,12 +231,6 @@ fieldset{
 }
 p{
 	color: white;
-}
-.fuente{
-	font-family: 'KoHo', sans-serif;
-}
-.fuente::first-letter{
-	font-size: 400%;
 }
 .scrollmenu {
 	justify-content: center;
