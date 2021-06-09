@@ -35,7 +35,7 @@ nav.navShadow {
 }
 
 body {
-  	background-image:url("fondo.jpg");
+  	background-color: blue;
   	color:white;
   	font-family: "Lato", Helvetica, sans-serif;
 }
