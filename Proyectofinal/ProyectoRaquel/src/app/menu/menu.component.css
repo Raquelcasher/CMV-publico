@@ -1,13 +1,8 @@
-.rojo{
-    background-color: red;
-    text-align: center;
-    color: white;
-    font-size: 25px;
+  
+.example-icon {
+  padding: 0 14px;
 }
 
-.blue{
-    background-color: blue;
-    text-align: center;
-    color: white;
-    font-size: 25px;
+.example-spacer {
+  flex: 1 1 auto;
 }

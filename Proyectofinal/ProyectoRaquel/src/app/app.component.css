@@ -7,6 +7,13 @@ RECORDAR: En caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
 */
+.scroll-to-top{
+  position: fixed;
+  background:red;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
 .rojo{
     background-color: red;
     text-align: center;
@@ -28,8 +35,10 @@ o sea al final de este archivo o en la misma pagina html
 }
 .dia {
 	color: var(--fuenteDia);
+	background-color: blue;
 }
 .noche {
+	background-color: black;
 	color: var(--fuenteNoche);
 	/*backdrop-filter: contrast(70%);*/
 }
@@ -73,43 +82,44 @@ body {
 }
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 80px; /* Location of the box */
-  left: 0;
-  top: 0;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	padding-top: 80px; /* Location of the box */
+	left: 0;
+	top: 0;
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+
 }
 .tama{
 	width: 500px;
 	height: 300px;
-	 left:0px;
-   right:0px;
-   top:0px;
-   margin:auto;
+	left:0px;
+   	right:0px;
+   	top:0px;
+   	margin:auto;
 }
 
 /* Modal Content (image) */
 .modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+	margin: auto;
+  	display: block;
+  	width: 80%;
+  	max-width: 700px;
 }
 
 /* Caption of Modal Image */
 #caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
+  	margin: auto;
+  	display: block;
+  	width: 80%;
+  	max-width: 700px;
+  	text-align: center;
+  	color: #ccc;
+  	padding: 10px 0;
+  	height: 150px;
 }
 
 /* Add Animation */
@@ -194,6 +204,12 @@ div {
 	color:white;
 	left: 0px;
 }
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
 .borde{
 	padding-top: 85px;
 }
@@ -259,14 +275,7 @@ p{
 	font-family : Verdana, Arial, Helvetica; 
 	font-size : 8pt; 
 	text-align : center;
-}
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-}
-/* Icono sol y luna*/
+}/* Icono sol y luna*/
 .darkModeSwitch{
     background: #3494b1;
     display:flex;

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef} from '@angular/core';
+import { ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   now:Date=new Date();;
-  constructor(){}
+  now:Date=new Date();
+  flag:boolean=true;
+  switchButton= document.getElementById('switch');
+  pageYoffset = 0;
+  @HostListener('window:scroll', ['$event']) onScroll(event:any){
+    this.pageYoffset = window.pageYOffset;
+  }
+
+  constructor(private scroll: ViewportScroller) { }
+
   ngOnInit(){
  
     setInterval(() => {
@@ -15,17 +24,13 @@ export class AppComponent {
       this.now = new Date();
  
     }, 1000);
-  /*FONDO*/
-
-
   }
-      /*switchButton.addEventListener('click', () => {
-        //toggle the HTML body the class 'dark'
-        $("*, p").toggleClass("noche");
-        //$("nav").toggleClass("paranav");
-        switchButton.classList.toggle('active')//toggle the HTML button with the id='switch' with the class 'active'
-      });*/
-  
-      
+  cambiarFlag(){ 
+    this.flag=!this.flag;
+  }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
+  }
 
 }

@@ -73,10 +73,10 @@ body {
 .tama{
 	width: 500px;
 	height: 300px;
-	 left:0px;
-   right:0px;
-   top:0px;
-   margin:auto;
+	left:0px;
+   	right:0px;
+   	top:0px;
+   	margin:auto;
 }
 
 /* Modal Content (image) */
@@ -245,7 +245,6 @@ p{
 .marquesina{
 	color: blue;
 }
-
 .reloj{
 	background-color : Black; 
 	color : White; 
