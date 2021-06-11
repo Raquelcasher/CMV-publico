@@ -7,3 +7,22 @@ RECORDAR: En caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
 */
+body {
+  	background-image:url("/assets/fondo.jpg");
+  	color:white;
+  	font-family: "Lato", Helvetica, sans-serif;
+}
+.dia {
+	color: var(--fuenteDia);
+}
+.noche {
+	color: var(--fuenteNoche);
+	backdrop-filter: contrast(70%);
+}
+
+:root {
+	--fuenteDia : white;
+	--fuenteNoche: black;
+	--light: #dddddd;
+	--dark: #000;
+}

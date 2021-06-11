@@ -14,52 +14,20 @@ o sea al final de este archivo o en la misma pagina html
   right: 0;
   cursor: pointer;
 }
-.rojo{
-    background-color: red;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
-
-.blue{
-    background-color: blue;
-    text-align: center;
-    color: white;
-    font-size: 25px;
-}
-:root {
-	--fuenteDia : white;
-	--fuenteNoche: black;
-	--light: #dddddd;
-	--dark: #000;
-}
-.dia {
-	color: var(--fuenteDia);
-	background-color: blue;
-}
-.noche {
-	background-color: black;
-	color: var(--fuenteNoche);
-	/*backdrop-filter: contrast(70%);*/
-}
 
 * {
 	box-sizing:border-box;
   	margin:0px;
 }
+
 nav{
 	z-index: 10;
   	transition: all 0.3s;
 }
+
 nav.navShadow {
   box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
   height: 60px;
-}
-
-body {
-  	background-color: blue;
-  	color:white;
-  	font-family: "Lato", Helvetica, sans-serif;
 }
 
 .grid{
@@ -71,6 +39,7 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
 .tam{
 	margin: auto;
 	width: 100%;
@@ -80,6 +49,7 @@ body {
 	cursor: pointer;
 	transition: 0.3s;
 }
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -90,9 +60,8 @@ body {
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-
-
 }
+
 .tama{
 	width: 500px;
 	height: 300px;
@@ -208,7 +177,6 @@ div {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    display: none;
 }
 .borde{
 	padding-top: 85px;
@@ -261,10 +229,12 @@ p{
 	display: inline-block;
 	text-transform: uppercase;
 }	
+
 .ki:hover{
 	font-size:25px;
 	background-color:yellow;
 }
+
 .marquesina{
 	color: blue;
 }
@@ -275,7 +245,9 @@ p{
 	font-family : Verdana, Arial, Helvetica; 
 	font-size : 8pt; 
 	text-align : center;
-}/* Icono sol y luna*/
+}
+
+/* Icono sol y luna*/
 .darkModeSwitch{
     background: #3494b1;
     display:flex;
@@ -287,6 +259,7 @@ p{
     align-items: center;
     justify-content: space-between;
 }
+
  .darkModeSwitch span{
     width:30px;
     height:30px;
@@ -295,6 +268,7 @@ p{
     color:#fff;
     background: none;
 }
+
 .darkModeSwitch::after{
     background: #fffbf5;
     width: 2.4rem;
@@ -307,13 +281,17 @@ p{
     transition: all .5s ease;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
     content: "";
-}.darkModeSwitch.active{
+}
+
+.darkModeSwitch.active{
   	background: #fdd384;
 }
+
 .darkModeSwitch.active::after{
 	left:unset;
 	right:0;
 }
+
 //Botón leer más
 .btn-read-more{
 	background:black;
@@ -329,6 +307,7 @@ p{
 	background-color:red;
 	color:white;
 }
+
 .cerrar{
 	float: none;
 	z-index: 10;

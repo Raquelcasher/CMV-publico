@@ -1,22 +1,24 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-// PARA PODER realizar las Rutas:
-//import { RouterModule, Routes } from '@angular/router'; 
+//PARA PODER REALIZAR LAS RUTAS:
+//import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { MostrarOcultarComponent } from './mostrar-ocultar/mostrar-ocultar.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
+
   declarations: [
-    AppComponent
+    AppComponent,
+    MostrarOcultarComponent,
+    MenuComponent,
   ],
   imports: [
-    BrowserModule
-  ],
-  imports: [
-    BrowserModule
+    BrowserModule,
     // AQUÍ TAMBIÉN
- //   RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -29,8 +29,4 @@ export class AppComponent {
     this.flag=!this.flag;
   }
 
-  scrollToTop(){
-    this.scroll.scrollToPosition([0,0]);
-  }
-
 }

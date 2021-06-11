@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef} from '@angular/core';
+import { ViewportScroller} from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,30 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'proyectoPrueba';
+  now:Date=new Date();
+  flag:boolean=true;
+  switchButton= document.getElementById('switch');
+  pageYoffset = 0;
+  @HostListener('window:scroll', ['$event']) onScroll(event:any){
+    this.pageYoffset = window.pageYOffset;
+  }
+
+  constructor(private scroll: ViewportScroller) { }
+
+  ngOnInit(){
+ 
+    setInterval(() => {
+ 
+      this.now = new Date();
+ 
+    }, 1000);
+  }
+  cambiarFlag(){ 
+    this.flag=!this.flag;
+  }
+
+  scrollToTop(){
+    this.scroll.scrollToPosition([0,0]);
+  }
+
 }
