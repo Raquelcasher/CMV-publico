@@ -177,6 +177,7 @@ div {
     position: fixed;
     bottom: 25px;
     right: 25px;
+    z-index: 5;
 }
 .borde{
 	padding-top: 85px;
