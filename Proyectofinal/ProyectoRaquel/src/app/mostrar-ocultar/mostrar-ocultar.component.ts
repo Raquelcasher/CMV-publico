@@ -6,19 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mostrar-ocultar.component.css']
 })
 export class MostrarOcultarComponent{
-
+  
   mostrar:boolean=false;
-  mensaje:String="Hola mundo";
-  mensaje_enlace:String="Mostrar";
+  mensaje_enlace:String="Leer más";
   mostrarOcultar() {
     if(this.mostrar){
       this.mostrar=false;
-      this.mensaje_enlace="Mostrar";
+      this.mensaje_enlace="Leer más";
     }else{
       this.mostrar=true;
-      this.mensaje_enlace="Ocultar";
+      this.mensaje_enlace="Leer menos";
+
     }
-
   }
-
 }

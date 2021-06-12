@@ -7,6 +7,11 @@ RECORDAR: En caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
 */
+
+.mf{
+	color: white;
+  	background-color:#D4EEFF !important;
+}
 .scroll-to-top{
   position: fixed;
   background:red;
@@ -53,7 +58,6 @@ nav.navShadow {
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
 	padding-top: 80px; /* Location of the box */
 	left: 0;
 	top: 0;
@@ -178,6 +182,15 @@ div {
     bottom: 25px;
     right: 25px;
     z-index: 5;
+}
+.modal-backdrop {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
 }
 .borde{
 	padding-top: 85px;
