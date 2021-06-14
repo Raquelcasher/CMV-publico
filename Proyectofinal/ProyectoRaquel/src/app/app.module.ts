@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { MostrarOcultarComponent } from './mostrar-ocultar/mostrar-ocultar.component';
 import { MenuComponent } from './menu/menu.component';
-import { RelojComponent } from './reloj/reloj.component';
 
 @NgModule({
 
@@ -16,7 +15,6 @@ import { RelojComponent } from './reloj/reloj.component';
     AppComponent,
     MostrarOcultarComponent,
     MenuComponent,
-    RelojComponent,
   ],
   imports: [
     BrowserModule,
