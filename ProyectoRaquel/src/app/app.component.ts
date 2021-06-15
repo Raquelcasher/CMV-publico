@@ -9,12 +9,26 @@ import { ViewportScroller} from '@angular/common';
 export class AppComponent {
   now:Date=new Date();
   flag:boolean=true;
-  switchButton= document.getElementById('switch');
-  pageYoffset = 0;
-  @HostListener('window:scroll', ['$event']) onScroll(event:any){
-    this.pageYoffset = window.pageYOffset;
+  switchButton= document.getElementById('switch');;
+  windowScrolled: boolean=true;
+  @HostListener("window:scroll", [])
+  onWindowScroll() {
+      if (window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop > 100) {
+          this.windowScrolled = true;
+      } 
+     else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
+          this.windowScrolled = false;
+      }
   }
-
+   scrollToTop() {
+      (function smoothscroll() {
+          var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+          if (currentScroll > 0) {
+              window.requestAnimationFrame(smoothscroll);
+              window.scrollTo(0, currentScroll - (currentScroll / 8));
+          }
+      })();
+  }
   constructor(private scroll: ViewportScroller) { }
 
   ngOnInit(){
@@ -28,5 +42,6 @@ export class AppComponent {
   cambiarFlag(){ 
     this.flag=!this.flag;
   }
+ 
 
 }
