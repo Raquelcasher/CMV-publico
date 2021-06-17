@@ -6,23 +6,63 @@ fecha: 14-5-2021
 RECORDAR: En caso de conflictos se aplica el estilo que se define último,
 o sea al final de este archivo o en la misma pagina html
 
-*/
 
+*/
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0
+}
+
+.btn-facebook {
+    background: #3b579d;
+    color: #ffffff
+}
+
+.btn-youtube {
+    background: #e52d27;
+    color: #ffffff
+}
+
+ .btn-twitter {
+    background: #2caae1;
+    color: #ffffff
+}
+
+.btn-instagram {
+    background: #dc4a38;
+    color: #ffffff
+}
+.btn.btn-rounded {
+    border-radius: 50px
+}
+.template-demo>.btn {
+    margin-right: 0.6rem !important
+}
+
+.template-demo {
+    margin-top: 0.6rem !important
+}
 .mf{
 	color: white;
-  	background-color:#D4EEFF !important;
+  	background-color:#87B2C7 !important;
 }
-.scroll-to-top{
-  position: fixed;
-  background:red;
-  bottom: 0;
-  right: 0;
-  cursor: pointer;
+.scroll-to-top {
+	background-color:#9CBDC9;
+  	cursor: pointer;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
 }
-
+.show-scrollTop {
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
 * {
 	box-sizing:border-box;
-  	margin:0px;
 }
 
 nav{
@@ -31,23 +71,26 @@ nav{
 }
 
 nav.navShadow {
-  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
-  height: 60px;
+  	box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
+  	height: 60px;
 }
 
 .grid{
-	padding-top: 85px;
+	padding-top: 100px;
 	display: grid;
-	grid-template-columns: 20%  20%  20%  20%  20%;
-	grid-template-rows: auto auto auto ;
-	grid-gap: 0px;
-	padding-left: 5px;
-	padding-right: 5px;
+	grid-template-columns: 33%  33%  33%;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-gap: 10px;
+	padding-left: 120px;
+	padding-right: 120px;
 }
 .modal button{
-	color: red;
+	
 }
 .tam{
+	background-color: #C9E0E8;
+	font-family: 'Spectral', serif;
+	font-size: 22px;
 	margin: auto;
 	width: 100%;
     height: auto;
@@ -55,6 +98,7 @@ nav.navShadow {
 	border-radius: 5px;
 	cursor: pointer;
 	transition: 0.3s;
+	padding: 25px;
 }
 .modal-content{
 	color: black;
@@ -101,10 +145,10 @@ nav.navShadow {
 
 /* Add Animation */
 .modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+  	-webkit-animation-name: zoom;
+  	-webkit-animation-duration: 0.6s;
+  	animation-name: zoom;
+  	animation-duration: 0.6s;
 }
 
 /*Se recorta lo que se ve de la imagen objet-fit*/
@@ -125,28 +169,28 @@ img:hover {
 	grid-row: 1 / span 1;
 }
 .cuadro3{
-	grid-column:5/ span 1;
-	grid-row: 1 / span 1;
+	grid-column:2/ span 1;
+	grid-row: 2/ span 1;
 }	
 .cuadro4{
-	grid-column:2/ span 1;
-	grid-row: 2 / span 1;
-}	
-.cuadro5{
-	grid-column:4/ span 1;
-	grid-row: 2 / span 1;
-}	
-.cuadro6{
 	grid-column:1/ span 1;
 	grid-row: 3 / span 1;
 }	
-.cuadro7{
+.cuadro5{
 	grid-column:3/ span 1;
 	grid-row: 3 / span 1;
 }	
+.cuadro6{
+	grid-column:2/ span 1;
+	grid-row: 4 / span 1;
+}	
+.cuadro7{
+	grid-column:1/ span 1;
+	grid-row: 5 / span 1;
+}	
 .cuadro8{
-	grid-column:5/ span 1;
-	grid-row: 3 / span 1;
+	grid-column:3/ span 1;
+	grid-row: 5 / span 1;
 }	
 .pie {
 	border-style: solid;
@@ -163,7 +207,12 @@ h2{
 	color: white;
 }
 footer {
+	padding-top: 15px;
 	color:white;
+}
+.footer2{
+	padding-top: 25px;
+	padding-bottom: 15px;
 }
 
 div {
@@ -181,12 +230,6 @@ div {
 	color:white;
 	left: 0px;
 }
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    z-index: 5;
-}
 .modal-backdrop {
     /* position: fixed; */
     top: 0;
@@ -200,13 +243,24 @@ div {
 	padding-top: 85px;
 }
 /*Responsive de las imagenes*/
-@media screen and (max-width: 382px) {
+@media screen and (max-width: 900px) {
 	.grid {
 		height:auto;
 		display: block;
 		margin: auto;
 		margin-bottom: 20px;
-		padding-top: 80px;
+		padding-top: 90px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}	
+	.tam{
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 382px) {
+	.grid {
+		margin: auto;
+		margin-bottom: 20px;
 	}	
 	nav.navShadow {
 	  box-shadow: 0 4px 30px -5px rgba(0, 0, 0, 0.2);
@@ -254,9 +308,27 @@ p{
 }
 
 .marquesina{
-	color: blue;
+	color: black;
+	height: 50px;
+	font-size: 35px;
+	font-family: 'BioRhyme', serif;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 80%;
+	ALIGN: BOTTOM;
+	BEHAVIOR: Scroll; 
 }
-
+.marnoche{
+	color: #CDEDF6;
+	height: 50px;
+	font-size: 35px;
+	font-family: 'BioRhyme', serif;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 80%;
+	ALIGN: BOTTOM;
+	BEHAVIOR: Scroll; 
+}
 .reloj{
 	background-color : Black; 
 	color : White; 
@@ -310,7 +382,6 @@ p{
 	right:0;
 }
 
-//Botón leer más
 .btn-read-more{
 	background:black;
 	padding:6px 12px;
@@ -334,3 +405,9 @@ p{
 	line-height: 1;
 	color: red;
 }
+
+.fechahora{
+	text-align:center;
+	margin-top: 30px;
+}
+
