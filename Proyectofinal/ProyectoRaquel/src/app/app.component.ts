@@ -181,9 +181,10 @@ export class AppComponent {
               }
             )
           }
-          arr.push(xmlItems,xmlItems1,xmlItems2,xmlItems3,xmlItems4,xmlItems5,xmlItems6,xmlItems7);
-        }console.log(arr);
-        resolve(arr);
+        }          
+      arr.push(xmlItems,xmlItems1,xmlItems2,xmlItems3,xmlItems4,xmlItems5,xmlItems6,xmlItems7);
+      console.log(arr);
+      resolve(arr);
       });
     });
   }
