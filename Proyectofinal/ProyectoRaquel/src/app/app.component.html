@@ -161,12 +161,13 @@
 							<div class="tama">
 								<div class="carousel-inner">
 									<div *ngFor="let item of xmlItems1; first as isFirst"[ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' ">
+										<div *ngIf="item.cod==2">
 											<img class="d-block w-100" src="{{item.url}}" alt="First slide">
 											<div class="carousel-caption">
 												<h5>{{item.name}}</h5>
 												<p>{{item.descrip}}</p>
 											</div>
-										
+										</div>
 									</div>
 								</div>	
 							</div>
