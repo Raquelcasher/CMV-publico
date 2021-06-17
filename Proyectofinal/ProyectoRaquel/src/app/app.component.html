@@ -78,42 +78,43 @@
 	<div [ngClass]="{'dia': flag, 'noche': !flag}">	
 		<div>
 			<div class="grid">
-				<div id="myImg" class="tam cuadro1 btn" data-toggle="modal" data-target="#myModal">
+				<div id="myImg" class="tam cuadro1 btn" data-toggle="modal" data-target="#myModal0">
 					Playas
 					<img class="d-block w-100" src="https://atomarpormundo.com/wp-content/uploads/2019/07/mejores-playas-gran-canaria-7-7.jpg" alt="First slide">
 				</div>
-				<div id="myImg1" class="tam cuadro2 btn" data-toggle="modal" data-target="#myModal2">
+				<div id="myImg1" class="tam cuadro2 btn" data-toggle="modal" data-target="#myModal1">
 					Ocio
 					<img class="d-block w-100" src="https://cdn2.civitatis.com/espana/gran-canaria/galeria/acuario-cristal.jpg" alt="First slide">
 				</div>
-				<div id="myImg2" class="tam cuadro3 btn" data-toggle="modal" data-target="#myModal3">
+				<div id="myImg2" class="tam cuadro3 btn" data-toggle="modal" data-target="#myModal2">
 					Parques temáticos
-					<img class="d-block w-100" src="https://www.mycanarias.com/wp-content/uploads/2017/06/holiday_world.jpg" alt="First slide">
+					<img class="vertical-center d-block w-100" src="https://www.mycanarias.com/wp-content/uploads/2017/06/holiday_world.jpg" alt="First slide">
 				</div>
-				<div id="myImg3" class="tam cuadro4 btn" data-toggle="modal" data-target="#myModal4">
+				<div id="myImg3" class="tam cuadro4 btn" data-toggle="modal" data-target="#myModal3">
 					Deportes acuáticos
-					<img class="d-block w-100" src="https://estaticos-cdn.prensaiberica.es/clip/0bce5e6a-4322-4ef5-b17a-3a3803028f36_21-9-aspect-ratio_default_0.jpg" alt="First slide">
+					<img class="vertical-center d-block w-100" src="https://www.okgrancanaria.com/wp-content/uploads/2017/08/parasailing.jpg" alt="First slide">
 				</div>
-				<div id="myImg4" class="tam cuadro5 btn" data-toggle="modal" data-target="#myModal5">
+				<div id="myImg4" class="tam cuadro5 btn" data-toggle="modal" data-target="#myModal4">
 					Gastronomía
 					<img class="d-block w-100" src="https://takeyoursit.files.wordpress.com/2015/11/cocinacanaria.jpg?w=1000" alt="First slide">
 				</div>
-				<div id="myImg5" class="tam cuadro6 btn" data-toggle="modal" data-target="#myModal6">
+				<div id="myImg5" class="tam cuadro6 btn" data-toggle="modal" data-target="#myModal5">
 					Museos
 					<img class="d-block w-100" src="https://planetatenerife.com/wp-content/uploads/2020/03/El-Museo-Canario-Las-Palmas.jpg" alt="First slide">
 				</div>
-				<div id="myImg6" class="tam cuadro7 btn" data-toggle="modal" data-target="#myModal7">
+				<div id="myImg6" class="tam cuadro7 btn" data-toggle="modal" data-target="#myModal6">
 					Miradores
 					<img class="d-block w-100" src="https://room-online-pro.s3.amazonaws.com/cobi%2Fmedia%2Fhdhotels.com%2Fstorage%2Fmedia%2Fuploads%2F2019%2F05%2F27%2Fmirador-del-balcon.jpg" alt="First slide">
 				</div>
-				<div id="myImg7" class="tam cuadro8 btn" data-toggle="modal" data-target="#myModal8">
+				<div id="myImg7" class="tam cuadro8 btn" data-toggle="modal" data-target="#myModal7">
 					Recursos Naturales
-					<img class="d-block w-100" src="https://atlasruraldegrancanaria.com/img/imagenes/wLumF2MkmfShDmn7.jpg" alt="First slide">
+					<img class="d-block w-100" src="https://tevatelleva.files.wordpress.com/2013/04/p1050318.jpg" alt="First slide">
 				</div>
+				
 				<!-- 1ª imagen de línea 1-->
 				<div>
-					<div id="myModal" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal0" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 						<div id="carouselExampleIndica" class="carousel slide" data-ride="carousel">
 							
 							<ol class="carousel-indicators">
@@ -122,9 +123,10 @@
 								<li data-target="#carouselExampleIndica" data-slide-to="2"></li>
 							</ol>
 							<div class="tama">
-								<div class="carousel-inner">
+								
 									<div *ngFor="let item of xmlItems; first as isFirst"[ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' ">
 										<div *ngIf="item.cod==1">
+											<div class="carousel-inner">
 											<img class="d-block w-100" src="{{item.url}}" alt="First slide">
 											<div class="carousel-caption">
 												<h5>{{item.name}}</h5>
@@ -145,10 +147,10 @@
 						</div>	
 					</div>
 				</div>
-				<!-- 2ª imagen de línea 1-->
+ 				<!--2ª imagen de línea 1-->
 				<div>	
-					<div id="myModal2" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal1" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
 						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 							
@@ -181,17 +183,17 @@
 						</div>	
 					</div>
 				</div>		
-				<!-- 3ª imagen de línea 1-->
+				<!--3ª imagen de línea 1-->
 				<div>	
-					<div id="myModal3" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal2" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
-						<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+						<div id="carouselEx" class="carousel slide" data-ride="carousel">
 							
 							<ol class="carousel-indicators">
-								<li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
-								<li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
-								<li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+								<li data-target="#carouselEx" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselEx" data-slide-to="1"></li>
+								<li data-target="#carouselEx" data-slide-to="2"></li>
 							</ol>
 							<div class="tama">
 								<div class="carousel-inner">
@@ -206,11 +208,11 @@
 									</div>
 								</div>	
 							</div>
-							<a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+							<a class="carousel-control-prev" href="#carouselEx" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 								<span class="sr-only">Previous</span>
 							</a>
-							<a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+							<a class="carousel-control-next" href="#carouselEx" role="button" data-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
 								<span class="sr-only">Next</span>
 							</a>
@@ -219,8 +221,8 @@
 				</div>		
 				<!-- 1ª imagen de línea 2-->
 				<div>	
-					<div id="myModal4" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal3" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
 						<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
 							
@@ -253,10 +255,10 @@
 						</div>	
 					</div>
 				</div>	
-				<!-- 2ª imagen de línea 2-->
+				<!--2ª imagen de línea 2-->
 				<div>	
-					<div id="myModal5" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal4" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
 						<div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
 							
@@ -291,8 +293,8 @@
 				</div>	
 				<!-- 1ª imagen de línea 3-->
 				<div>	
-					<div id="myModal6" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal5" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
 						<div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
 							
@@ -325,10 +327,10 @@
 						</div>	
 					</div>
 				</div>	
-				<!-- 2ª imagen de línea 3-->
+				<!--2ª imagen de línea 3-->
 				<div>	
-					<div id="myModal7" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal6" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
 						<div id="carouselExampleIndicators6" class="carousel slide" data-ride="carousel">
 							
@@ -362,8 +364,8 @@
 				</div>
 				<!-- 3ª imagen de línea 3-->
 				<div>	
-					<div id="myModal8" class="modal" data-ride="carousel">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<div id="myModal7" class="modal" data-ride="carousel">
+						<button type="button" class="btn btn-default clos" data-dismiss="modal">Close</button>
 
 						<div id="carouselExampleIndicators7" class="carousel slide" data-ride="carousel">
 							
@@ -400,6 +402,49 @@
 		</div>	
 	</div>		
 	<app-mostrar-ocultar></app-mostrar-ocultar>
+	<!--<div *ngFor='let in of counter(8) ;let i = index'>
+		{{i}}
+		<div class="hola{{i}}"></div>
+	</div>
+	
+				<div *ngFor='let in of counter(8) ;let i = index'>
+					{{i}}
+					<div>
+						<div id="myModal{{i}}" class="modal" data-ride="carousel">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<div id="carouselExampleIndica{{i}}" class="carousel slide" data-ride="carousel">
+								
+								<ol class="carousel-indicators">
+									<li data-target="#carouselExampleIndica{{i}}" data-slide-to="0" class="active"></li>
+									<li data-target="#carouselExampleIndica{{i}}" data-slide-to="1"></li>
+									<li data-target="#carouselExampleIndica{{i}}" data-slide-to="2"></li>
+								</ol>
+								<div class="tama">
+									<div class="carousel-inner">
+										<div *ngFor="let item of xmlItems; first as isFirst"[ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' ">
+											<div *ngIf="item.cod=={{i}}">
+												<img class="d-block w-100" src="{{item.url}}" alt="First slide">
+												<div class="carousel-caption">
+													<h5>{{item.name}}</h5>
+													<p>{{item.descrip}}</p>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleIndica{{i}}" role="button" data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Previous</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleIndica{{i}}" role="button" data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Next</span>
+								</a>
+							</div>	
+						</div>
+					</div>
+				</div>-->
+	
 	<!-- Video -->
 	<br>
 	<video  height="50%" width="70%" controls crossorigin>
@@ -410,10 +455,12 @@
 	<!-- Entorno de fecha y hora -->
 	<hr style="width:50%">
 	<div class="fechahora">
+
 		Hora actual en :
 		<h3>Las Palmas de Gran Canaria, Espa&ntilde;a</h3>
 		<div nz-col nzSpan="4">
 			<div nz-row>
+
 			   	<p style="margin-top:20px;color: #87B2C7;font-size: 30px;font-weight: 500;"> 
 			        {{now|date:'hh:mm:ss'}}
 			   	</p>

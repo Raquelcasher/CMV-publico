@@ -12,6 +12,9 @@ import * as xml2js from 'xml2js';
 })
 export class AppComponent {
   now: Date = new Date();
+  counter(i: number) {
+    return new Array(i);
+}
   flag: boolean = true;
   switchButton = document.getElementById('switch');
   windowScrolled: boolean = true;
