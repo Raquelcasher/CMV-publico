@@ -89,7 +89,7 @@ function leerXML0() {
       miFuncion(this);
     }
   };
-  xhr.open("GET", "https://raquelcasher.github.io/CMV-publico/03-05/03Junio.xml", true);
+  xhr.open("GET", "https://raquelcasher.github.io/CMV-publico/04-06/03Junio.xml", true);
   xhr.send();
 }
 
